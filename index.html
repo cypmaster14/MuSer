@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Scientific Research Smart Assistant — SciRA</title>
+        <title>MuSeR - Music Smart Enhancer</title>
         <link rel="stylesheet" href="public/css/scholarly.css">
         <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
         <script src="public/js/prismjs/prism.js" defer></script>
@@ -32,23 +32,23 @@
                         </a>
                     </li>
                     <li property="schema:contributor" typeof="sa:ContributorRole">
+                        <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
+                            <span property="schema:givenName">Cehan</span>
+                            <span property="schema:familyName">Dan</span>
+                        </a>
+                    </li>
+                    <li property="schema:contributor" typeof="sa:ContributorRole">
                         <a property="schema:contributor" href="https://github.com/lupusilviu95"
                            typeof="schema:Person">
                             <span property="schema:givenName">Lupu</span>
                             <span property="schema:familyName">Silviu</span>
                         </a>
                     </li>
-                    <li property="schema:contributor" typeof="sa:ContributorRole">
-                        <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
-                            <span property="schema:givenName">Cehan</span>
-                            <span property="schema:familyName">Dan</span>
-                        </a>
-                    </li>
                 </ol>
                 <ol>
                     <li id="scienceai">
-                        <a href="https://scira.github.io/" typeof="schema:Corporation">
-                            <span property="schema:name">scira.io</span>
+                        <a href="https://www.info.uaic.ro/bin/Main/" typeof="schema:Corporation">
+                            <span property="schema:name">Faculty of Computer Science</span>
                         </a>
                     </li>
                 </ol>
@@ -56,136 +56,37 @@
 
             <section typeof="sa:Abstract" id="abstract">
                 <h2>Abstract</h2>
-                <p>
-                    When writing academic papers, searching for related literature and managing documents/references can
-                    be a burden.
-                    We are developing a smart platform able to provide an innovative visual experience regarding the
-                    references between papers, their genealogy, and various information about (co-)authors.
-                    Additionally, they system will offer multple data/knowledge visualization solutions and filtering
-                    techniques using several refinements (puplication year, subject, keywords, language).
+                <p><strong>MuSeR</strong> (Music Smart Enhancer) is a cross-platform application developed for music lovers that intend to have a centralized point of playlists management. The underlying mechanisms of the application are smartly interconnecting the entities (Arists, Songs, Albums etc.) using the principles of semantic Web.</br>
+                Users will be able to import and export playlists, find artists, songs, albums and also nearby events. By using modern Web technologies, MuSeR can suggest entities and offer 'smart' playlist recommendations based on 'search keywords', already added songs in the personal playlists and based on historical data.
                 </p>
             </section>
-            <section typeof="sa:MaterialsAndMethods" id="motivation">
-                <h2>Motivation</h2>
-                <aside typeof="schema:WPSideBar">
-                    <p>
-                        <strong>New</strong>: you can now join the
-                        <a href="https://www.w3.org/community/scholarlyhtml/">Scholarly HTML Community Group</a>
-                        to help make this a standard.
-                    </p>
-                    <p>
-                        This document is an early-stage release. While the underlying format is relatively
-                        mature and actually implemented, details are still in flux and the format can still be
-                        changed. The quality of this document is also being gradually improved. If you’re
-                        interested in this project, come join
-                        <a href="https://github.com/scienceai/scholarly.vernacular.io/">the party on GitHub</a>
-                        or talk to either <a href="https://twitter.com/sciencedotai">@sciencedotai</a> or
-                        <a href="https://twitter.com/robinberjon">@robinberjon</a> in Twitter.
-                    </p>
-                </aside>
-                <p>
-                    Scholarly articles are still primarily encoded as unstructured graphics formats in which
-                    most of the information initially created by research, or even just in the text, is lost.
-                    This was an acceptable, if deplorable, condition when viable alternatives did not seem
-                    possible, but document technology has today reached a level of maturity and universality
-                    that makes this situation no longer tenable. Information cannot be disseminated if it is
-                    destroyed before even having left its creator’s laptop.
-                </p>
-                <p>
-                    According to the New York Times, adding structured information to their recipes (instead
-                    of exposing simply as plain text) improved their discoverability to the point of producing
-                    an immediate rise of 52 percent in traffic (<a href="#ref-nyt"
-                                                                   property="schema:citation">NYT, 2014</a>). At this
-                    point in time, cupcake recipes are
-                    reaping greater benefits from modern data format practices than the whole scientific
-                    endeavour.
-                </p>
-                <p>
-                    This is not solely a loss for the high principles of knowledge sharing in science, it also
-                    has very immediate pragmatic consequences. Any tool, any service that tries to integrate
-                    with scholarly publishing has to spend the brunt of its complexity (or budget) extracting
-                    data the author would have willingly shared out of antiquated formats. This places
-                    stringent limits on the improvement of the scholarly toolbox, on the discoverability of
-                    scientific knowledge, and particularly on processes of meta-analysis.
-                </p>
-                <p>
-                    To address these issues, we have followed an approach rooted in established best practices
-                    for the reuse of open, standard formats. The «HTML Vernacular» body of practice provides
-                    guidelines for the creation of domain-specific data formats that make use of HTML’s
-                    inherent extensibility (<a href="#ref-vernacular" property="schema:citation">Science.AI,
-                    2015b</a>). Using the vernacular foundation overlaid with «schema.org» metadata we have
-                    produced a format for the interchange of scholarly articles built on open standards, ready
-                    for all to use.
-                </p>
-                <p>
-                    Our high-level goals were:
-                </p>
+            <section typeof="sa:Materials" id="technologies">
+                <h2>Technologies</h2>
                 <ul>
-                    <li>
-                        Uncompromisingly enabling structured metadata, accessibility, and internationalisation.
-                    </li>
-                    <li>
-                        Pragmatically working in Web browsers, even if it occasionally incurs some markup
-                        overhead.
-                    </li>
-                    <li>
-                        Powerfully customisable for inclusion in arbitrary Web sites, while remaining easy to
-                        process and interoperable.
-                    </li>
-                    <li>
-                        Entirely built on top of open, royalty-free standards.
-                    </li>
-                    <li>
-                        Long-term viability as a data format.
-                    </li>
+                    <li><p><a href="https://nodejs.org/en/">NodeJS</a> is an open-source server side runtime environment built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side application using JavaScript.</p></li>
+                    <li><p><a href="https://serverless.com/">serverless</a> is a framework & toolkit that helps developers focus on the application architecture, functionalities and details and not on the infrastructure. It provides various useful mechanisms for deploying code in the Cloud provider services (e.g. AWS Lambda), Cloud authorization, testing and much more.</p></li>
+                    <li><p><a href="http://ionicframework.com/docs/">Ionic</a> is the open-source mobile app development framework that makes it easy to build top quality native and progressive web apps with web technologies. Ionic is based on Angular and comes with many significant performance, usability, and feature improvements over the past versions.</p></li>
+                    <li><p><a href="https://angular.io/">Angular</a> is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.</p></li>
+                    <li><p><a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> is the Cloud product - IaaS - provided by Amazon featuring a huge set of services, technologies, storage solutions, logging and many others more. MuSeR mainly uses Lambda, Elastic Computing 2, API Gateway, </p></li>
+                    <li><p><a href="https://jwt.io">JWT (JSON Web Tokens)</a> is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA.</p></li>
+                    <li><p><a href="http://graphdb.ontotext.com/">GraphDB</a> is a highly-efficient and robust graph database - a semantic repository that stores and manipulates RDF data along with an inference engine that uses rules to infer new knowledge - and SPARQL support.</p></li>
+                    <li><p><a href="http://www.xspf.org/jspf/">JSPF</a> represents the JSON version of the XSPF (XML Shareable Playlist Format) and it is a next-generation playlist format for digital media (songs).</p></li>
                 </ul>
-                <p>
-                    Additionally, in view of the specific problem we addressed, in the creation of this
-                    vernacular we have favoured the reliability of interchange over ease of authoring; but
-                    have nevertheless attempted to cater to the latter as much as possible. A decent
-                    boilerplate template file can certainly make authoring relatively simple, but not as
-                    radically simple as it can be. For such use cases, Scholarly HTML provides a great output
-                    target and overview of the data model required to support scholarly publishing at the
-                    document level.
-                </p>
-                <p>
-                    An example of an authoring format that was designed to target Scholarly HTML as an
-                    output is the <a href="http://scienceai.github.io/docx-standard-scientific-style">DOCX
-                    Standard Scientific Style</a> which enables authors who are comfortable with Microsoft
-                    Word to author documents that have a direct upgrade path to semantic, standard content.
-                </p>
-                <p>
-                    Where semantic modelling is concerned, our approach is to stick as much as possible to
-                    <a href="http://schema.org/">schema.org</a>. Beyond the obvious advantages there are in
-                    reusing a vocabulary that is supported by all the major search engines and is actively
-                    being developed towards enabling a shared understanding of many useful concepts, it also
-                    provides a protection against «<em>ontological drift</em>» whereby a new vocabulary is
-                    defined by a small group with insufficient input from a broader community of practice.
-                    A language that solely a single participant understands is of limited value.
-                </p>
-                <p>
-                    In a small, circumscribed number of cases we have had to depart from
-                    <a href="http://schema.org">schema.org</a>, using the <code>https://ns.science.ai/</code>
-                    (prefixed with <code>sa:</code>) vocabulary instead
-                    (<a href="#ref-sa-ontology" property="schema:citation">Science.AI, 2015a</a>). Our goal is
-                    to work with <a href="http://schema.org">schema.org</a> in order to extend their
-                    vocabulary, and we will align our usage with the outcome of these discussions.
-                </p>
             </section>
-            <section typeof="sa:Results" id="definition">
-                <h2>Definition</h2>
-                <p>
-                    A <dfn id="scholarly-html">Scholarly HTML document</dfn> is a valid HTML document that
-                    follows some additional rules to specialise its meaning and make it predictable to
-                    processors wishing to produce or consume scholarly articles. These rules are outlined in
-                    the following sections.
-                </p>
-                <p>
-                    Please note that in its current state this specification is often informal in the manner
-                    in which it describes its constraints. This is to facilitate review by people unfamiliar
-                    with formal specification writing. As the format solidifies, it will be made more formal
-                    progressively (but attempt to remain readable).
-                </p>
+            <section typeof="sa:Methods" id="architecture">
+                <h2>Architecture</h2>
+                <figure typeof="sa:Image">
+                    <img src="public/resources/hop-less.png" width="880" height="655">
+                    <figcaption>
+                        Reconstruction of Sthenurus stirlingi, by Brian Regal; in
+                        «<cite><a
+                            href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109888">Locomotion
+                        in Extinct Giant Kangaroos: Were Sthenurines Hop-Less Monsters?</a></cite>», by
+                        Christine M. Janis, Karalyn Buttrill, Borja Figueirido.
+                    </figcaption>
+                </figure>
+                <p></p>
+
                 <section id="file-headers">
                     <h3>File &amp; Supporting Structure</h3>
                     <p>
