@@ -8,39 +8,45 @@
     <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
     <script src="public/js/prismjs/prism.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
 <header>
     <p class="title">Music Smart Enhancer</p>
-    <p class="subtitle">MuSer</p>
+    <p class="subtitle">MuSeR</p>
 </header>
 <article id="what" typeof="schema:ScholarlyArticle" resource="#">
-    <h1>What is MuSer?</h1>
+    <h1>What is MuSeR?</h1>
     <section>
         <ol>
             <li property="schema:contributor" typeof="sa:ContributorRole">
-                <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
-                    <span property="schema:givenName">Lila-Ciprian</span>
-                    <span property="schema:familyName">Lazar</span>
-                </a>
-
-            </li>
-            <li property="schema:contributor" typeof="sa:ContributorRole">
                 <a property="schema:contributor" href="https://github.com/xSkyripper" typeof="schema:Person">
-                    <span property="schema:givenName">Alexandru</span>
+                    <span property="schema:givenName">Alexandru - Gabriel</span>
                     <span property="schema:familyName">Cristea</span>
                 </a>
             </li>
             <li property="schema:contributor" typeof="sa:ContributorRole">
                 <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
-                    <span property="schema:givenName">Dan</span>
+                    <span property="schema:givenName">Dan - Stefan</span>
                     <span property="schema:familyName">Cehan</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
+                    <strong>
+                        <span property="schema:givenName">Lila - Ciprian</span>
+                        <span property="schema:familyName">Lazar</span>
+                    </strong>
                 </a>
             </li>
             <li property="schema:contributor" typeof="sa:ContributorRole">
                 <a property="schema:contributor" href="https://github.com/lupusilviu95"
                    typeof="schema:Person">
-                    <span property="schema:givenName">Silviu</span>
+                    <span property="schema:givenName">Silviu - Cristian</span>
                     <span property="schema:familyName">Lupu</span>
                 </a>
             </li>
@@ -77,6 +83,9 @@
                 developers focus on the application architecture, functionalities and details and not on the
                 infrastructure. It provides various useful mechanisms for deploying code in the Cloud provider
                 services (e.g. AWS Lambda), Cloud authorization, testing and much more.</p></li>
+            <li><p><a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> is the Cloud product - IaaS -
+                provided by Amazon featuring a huge set of services, technologies, storage solutions, logging
+                and many others more. MuSeR mainly uses Lambda, Elastic Cloud Computing and API Gateway. </p></li>
             <li><p><a href="http://ionicframework.com/docs/">Ionic</a> is the open-source mobile app development
                 framework that makes it easy to build top quality native and progressive web apps with web
                 technologies. Ionic is based on Angular and comes with many significant performance, usability,
@@ -86,9 +95,6 @@
                 application's components clearly and succinctly. AngularJS's data binding and dependency
                 injection eliminate much of the code you would otherwise have to write. And it all happens
                 within the browser, making it an ideal partner with any server technology.</p></li>
-            <li><p><a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> is the Cloud product - IaaS -
-                provided by Amazon featuring a huge set of services, technologies, storage solutions, logging
-                and many others more. MuSeR mainly uses Lambda, Elastic Computing 2, API Gateway, </p></li>
             <li><p><a href="https://jwt.io">JWT (JSON Web Tokens)</a> is an open standard (RFC 7519) that
                 defines a compact and self-contained way for securely transmitting information between parties
                 as a JSON object. This information can be verified and trusted because it is digitally signed.
@@ -125,18 +131,20 @@
             <p>
                 <strong>Microservices</strong> architectural style represents a distinctive method of conceiving software systems. Each functionality or service is independent, deployable, small and modular, meaning that each one is as decoupled as possible from another. Combining this concept with the 'serverless' concept, each microservice in our application runs in a separate AWS Lambda unified by a central API Gateway. This one respects the REST API concepts and it will expose different paths for each microservice:
             <ul>
-                <li><p><code>PlaylistService</code> - the main, most important service of MuSeR; it will provide 'C.R.U.D.' operations for playlists and the data will be fetched by making calls to other services (described below)</p></li>
+                <li><p><code>PlaylistService</code> - the main, most important service of MuSeR; it will provide 'C.R.U.D.' operations for playlists and the data will be fetched by executing calls to other services (described below)</p></li>
                 <li><p><code>ArtistService</code> - the service used to fetch information about artists, their records, biography and other details</p></li>
                 <li><p><code>SongService</code> - the service that finds recordings and details about their creators and albums containing them</p></li>
                 <li><p><code>AlbumService</code> - the service that searches collections created by artists and that contain songs</p></li>
                 <li><p><code>GenreService</code> - the service that finds genres entities</p></li>
                 <li><p><code>EventService</code> - the service used to discover nearby events related to music</p></li>
             </ul>
+                <strong>An OpenAPI specification</strong> has been developed that describes the API paths and behaviour as you can see here:
+                <a href="https://app.swaggerhub.com/apis/WADE-Muser/muser/1.0.0">MuSeR Swaggerhub - OpenAPI</a>.
                 Each microservice interrogates RDF datasources - WikiData and DBPedia - and also the Spotify service to find information, entities and relationships between entities and stores them into MuSeR's RDF storage implemented with GraphDB.
             </p>
 
             <p>
-                <strong>Authentication</strong> components relies on the JSON Web Token technology that is used
+                <strong>Authentication</strong> component relies on the JSON Web Token technology that is used
                 by an 'authorizer' represented by an AWS Lambda function. Each call of the REST API exposed by
                 MuSeR requires the auth token and the access is forbidden if it is invalid or missing.
             </p>
@@ -213,7 +221,7 @@
 
                 <li>
                     <p>
-                        The user must register and generate a JWT before using the REST API exposed by MuSer. Every subsequent call of the API will require the token.
+                        The user must register and generate a JWT before using the REST API exposed by MuSeR. Every subsequent call of the API will require the token.
                     </p>
                 </li>
 
@@ -244,7 +252,7 @@
             </figure>
 
             <p>
-                The above sequence diagram presents the workflow of retrieving information about an artist. First, we validate the token received from the client and if the validation is successful, a lambda function will be triggered. The function will retrieve the information from the RDF datasource, based on the id that was received with the request. Otherwise, if the token validation fails, the request will be denied.
+                The above shown sequence diagram presents the workflow of retrieving information about an artist. First, the authorizer validates the token received from the client and if the validation is successful, a lambda function will be triggered. The function will retrieve the information from the RDF datasource, based on the id that was received with the request. Otherwise, if the token validation fails, the request will be denied.
             </p>
 
             <figure typeof="sa:Image">
@@ -254,7 +262,7 @@
                 </figcaption>
             </figure>
             <p>
-                The above diagram presents the actions that will be performed to generate a 'smart' playlist. First, a token validation is made and if the validation is successful, the playlist will be generated base on the options that have been selected by the user. This action is being performed by a specialized lambda function. The client will be able to generate 'smart' playlist based on : keywords, history and owned playlists. Otherwise, if the token validation fails, the request will be denied.
+                Our second sequence diagram shows the actions that will be performed to generate a 'smart' playlist. First, a token validation is executed and if it is successful, the playlist will be generated base on the options that have been selected by the user. This action is being performed by a specialized lambda function. The client will be able to generate 'smart' playlist based on: keywords, history and owned playlists. Otherwise, if the token validation fails, the request will be denied.
             </p>
 
             <section id="data-modelling">
@@ -362,7 +370,7 @@
                         </tr>
                         <tr>
                             <td>id_spotify</td>
-                            <td>spotify</td>
+                            <td>string</td>
                             <td>the unique ID from Spotify</td>
                         </tr>
                         <tr>
@@ -472,7 +480,7 @@
                         <tr>
                             <td>album</td>
                             <td>Album</td>
-                            <td>the album of the song</td>
+                            <td>the album that features the song</td>
                         </tr>
 
                         <caption>
@@ -659,7 +667,7 @@
                 </figure>
 
             <p>
-                Aside from the data model described above, there will also be a <code>Users</code> and <code>History</code> table that will store information about the registered persons and the historical data for each one of them.
+                Tables <code>Users</code> and <code>History</code> will be created too using the AWS DynamoDB. They will store information about the registered persons and the historical search data for each individual.
             </p>
 
             </section><!-- data-modelling -->
@@ -687,21 +695,142 @@
 
         <section id="conclusion">
             <h2>Conclusion & Future considerations</h2>
+            <p>
+                MuSeR has been created to ease up the management of playlists for music enthusiasts by providing an intuitive platform that uses semantic Web concepts to enhance the
+                way of visualizing the relationships between various entities in the context of musical domain. The application can be extended and improved in different ways by conceiving new mechanisms and architectural ideas.
+            </p>
+            <aside typeof="schema:WPSideBar">
+                <center>
+                    All of these can be integrated in the current version of the design resulting in a modern, evolved MuSeR, an user-friendly playlist manager a.k.a music enhancer.
+                </center>
+            </aside>
         </section>
 
+        <section typeof="sa:ReferenceList" id="references">
+            <h2>References</h2>
+            <dl>
+                <dt>NodeJS, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="https://nodejs.org/en/">
+                    <cite property="schema:name">
+                        <a href="https://nodejs.org/en/">NodeJS</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Joyent, Inc.</span>
+                    </span>
+                </dd>
+
+                <dt>Ionic Framework, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="http://ionicframework.com/">
+                    <cite property="schema:name">
+                        <a href="http://ionicframework.com/t">Ionic</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Drifty Co.</span>
+                    </span>
+                </dd>
+
+                <dt>Angular Framework, 2017</dt>
+                <dd id="ref-angular" typeof="schema:CreativeWork"
+                    resource="https://angular.io/">
+                    <cite property="schema:name">
+                        <a href="https://angular.io/">Angular</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Google</span>
+                    </span>
+                </dd>
+
+                <dt>serverless, 2017</dt>
+                <dd id="ref-serverless" typeof="schema:CreativeWork"
+                    resource="https://serverless.com/">
+                    <cite property="schema:name">
+                        <a href="https://serverless.com/">serverless</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">The Serverless Team</span>
+                    </span>
+                </dd>
+
+                <dt>Amazon Web Services, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="https://aws.amazon.com/">
+                    <cite property="schema:name">
+                        <a href="https://aws.amazon.com/">AWS</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Amazon</span>
+                    </span>
+                </dd>
+
+                <dt>GraphDB, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="https://ontotext.com/products/graphdb/">
+                    <cite property="schema:name">
+                        <a href="https://ontotext.com/products/graphdb/">GraphDB</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Ontotext</span>
+                    </span>
+                </dd>
+
+                <dt>JSON Web Tokens, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="https://jwt.io/">
+                    <cite property="schema:name">
+                        <a href="https://jwt.io/">JWT</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name"> Auth0</span>
+                    </span>
+                </dd>
+
+                <dt>JSON Shareable Playlist Format, 2007</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="http://www.xspf.org/jspf/">
+                    <cite property="schema:name">
+                        <a href="http://www.xspf.org/jspf/">JSPF</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">Xiph.Org</span>
+                    </span>
+                </dd>
+
+                <dt>SwaggerHub - OpenAPI, 2017</dt>
+                <dd id="ref-ionic" typeof="schema:CreativeWork"
+                    resource="https://app.swaggerhub.com/">
+                    <cite property="schema:name">
+                        <a href="https://app.swaggerhub.com/">SwaggerHub</a>
+                    </cite>,
+                    by
+                    <span property="schema:author" typeof="schema:Organization">
+                        <span property="schema:name">SmartBear Software</span>
+                    </span>
+                </dd>
+
+            </dl>
+        </section>
 
     </section>
 </article>
 <footer>
     <p>
-        <a href="https://scira.github.io/documentation/">Documentation home</a>
-        <a href="https://twitter.com/sciencedotai">@sciencedotai</a>
+        Music Smart Enhancer
         •
-        <a href="https://github.com/scienceai/scholarly.vernacular.io">Contribute</a>
+        <a href="https://www.info.uaic.ro/bin/Main/">
+            <img src="https://www.info.uaic.ro/skins/fii/logo_fii3.png" height="20px">
+        </a>
         •
-        Brought to you by the
-        <a href="http://science.ai/"><img src="sciencedotai.svg" alt="science.ai logo" height="20px"></a>
-        League of JStice
+        <a href="https://github.com/cypmaster14/MuSer">MuSeR @ Github</a>
     </p>
 </footer>
 </body>
