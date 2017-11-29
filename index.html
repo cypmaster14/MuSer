@@ -1,700 +1,715 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>MuSeR - Music Smart Enhancer</title>
-        <link rel="stylesheet" href="public/css/scholarly.css">
-        <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
-        <script src="public/js/prismjs/prism.js" defer></script>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
-        <header>
-            <p class="title">Music Smart Enhancer</p>
-            <p class="subtitle">MuSer</p>
-        </header>
-        <article id="what" typeof="schema:ScholarlyArticle" resource="#">
-            <h1>What is MuSer?</h1>
-            <section>
-                <ol>
-                    <li property="schema:contributor" typeof="sa:ContributorRole">
-                        <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
-                            <span property="schema:givenName">Lila-Ciprian</span>
-                            <span property="schema:familyName">Lazar</span>
-                        </a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MuSeR - Music Smart Enhancer</title>
+    <link rel="stylesheet" href="public/css/scholarly.css">
+    <link rel="stylesheet" href="public/js/prismjs/themes/prism-coy.css">
+    <script src="public/js/prismjs/prism.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">Music Smart Enhancer</p>
+    <p class="subtitle">MuSer</p>
+</header>
+<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>What is MuSer?</h1>
+    <section>
+        <ol>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/cypmaster14" typeof="schema:Person">
+                    <span property="schema:givenName">Lila-Ciprian</span>
+                    <span property="schema:familyName">Lazar</span>
+                </a>
 
-                    </li>
-                    <li property="schema:contributor" typeof="sa:ContributorRole">
-                        <a property="schema:contributor" href="https://github.com/xSkyripper" typeof="schema:Person">
-                            <span property="schema:givenName">Alexandru</span>
-                            <span property="schema:familyName">Cristea</span>
-                        </a>
-                    </li>
-                    <li property="schema:contributor" typeof="sa:ContributorRole">
-                        <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
-                            <span property="schema:givenName">Dan</span>
-                            <span property="schema:familyName">Cehan</span>
-                        </a>
-                    </li>
-                    <li property="schema:contributor" typeof="sa:ContributorRole">
-                        <a property="schema:contributor" href="https://github.com/lupusilviu95"
-                           typeof="schema:Person">
-                            <span property="schema:givenName">Silviu</span>
-                            <span property="schema:familyName">Lupu</span>
-                        </a>
-                    </li>
-                </ol>
-                <ol>
-                    <li id="scienceai">
-                        <a href="https://www.info.uaic.ro/bin/Main/" typeof="schema:Corporation">
-                            <span property="schema:name">Faculty of Computer Science</span>
-                        </a>
-                    </li>
-                </ol>
-            </section>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/xSkyripper" typeof="schema:Person">
+                    <span property="schema:givenName">Alexandru</span>
+                    <span property="schema:familyName">Cristea</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/astonished12" typeof="schema:Person">
+                    <span property="schema:givenName">Dan</span>
+                    <span property="schema:familyName">Cehan</span>
+                </a>
+            </li>
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/lupusilviu95"
+                   typeof="schema:Person">
+                    <span property="schema:givenName">Silviu</span>
+                    <span property="schema:familyName">Lupu</span>
+                </a>
+            </li>
+        </ol>
+        <ol>
+            <li id="scienceai">
+                <a href="https://www.info.uaic.ro/bin/Main/" typeof="schema:Corporation">
+                    <span property="schema:name">Faculty of Computer Science</span>
+                </a>
+            </li>
+        </ol>
+    </section>
 
-            <section typeof="sa:Abstract" id="abstract">
-                <h2>Abstract</h2>
-                <p><strong>MuSeR</strong> (Music Smart Enhancer) is a cross-platform application developed for music
-                    lovers that intend to have a centralized point of playlists management. The underlying mechanisms of
-                    the application are smartly interconnecting the entities (Artists, Songs, Albums etc.) using the
-                    principles of semantic Web.</br>
-                    Users will be able to import and export playlists, find artists, songs, albums and also nearby
-                    events. By using modern Web technologies, MuSeR can suggest entities and offer 'smart' playlist
-                    recommendations based on 'search keywords', already added songs in the personal playlists and based
-                    on historical data.
-                </p>
-            </section>
-            <section typeof="sa:Materials" id="technologies">
-                <h2>Technologies</h2>
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Abstract</h2>
+        <p><strong>MuSeR</strong> (Music Smart Enhancer) is a cross-platform application developed for music
+            lovers that intend to have a centralized point of playlists management. The underlying mechanisms of
+            the application are smartly interconnecting the entities (Artists, Songs, Albums etc.) using the
+            principles of semantic Web.</br>
+            Users will be able to import and export playlists, find artists, songs, albums and also nearby
+            events. By using modern Web technologies, MuSeR can suggest entities and offer 'smart' playlist
+            recommendations based on 'search keywords', already added songs in the personal playlists and based
+            on historical data.
+        </p>
+    </section>
+    <section typeof="sa:Materials" id="technologies">
+        <h2>Technologies</h2>
+        <ul>
+            <li><p><a href="https://nodejs.org/en/">NodeJS</a> is an open-source server side runtime environment
+                built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous)
+                I/O and cross-platform runtime environment for building highly scalable server-side application
+                using JavaScript.</p></li>
+            <li><p><a href="https://serverless.com/">serverless</a> is a framework & toolkit that helps
+                developers focus on the application architecture, functionalities and details and not on the
+                infrastructure. It provides various useful mechanisms for deploying code in the Cloud provider
+                services (e.g. AWS Lambda), Cloud authorization, testing and much more.</p></li>
+            <li><p><a href="http://ionicframework.com/docs/">Ionic</a> is the open-source mobile app development
+                framework that makes it easy to build top quality native and progressive web apps with web
+                technologies. Ionic is based on Angular and comes with many significant performance, usability,
+                and feature improvements over the past versions.</p></li>
+            <li><p><a href="https://angular.io/">Angular</a> is a structural framework for dynamic web apps. It
+                lets you use HTML as your template language and lets you extend HTML's syntax to express your
+                application's components clearly and succinctly. AngularJS's data binding and dependency
+                injection eliminate much of the code you would otherwise have to write. And it all happens
+                within the browser, making it an ideal partner with any server technology.</p></li>
+            <li><p><a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> is the Cloud product - IaaS -
+                provided by Amazon featuring a huge set of services, technologies, storage solutions, logging
+                and many others more. MuSeR mainly uses Lambda, Elastic Computing 2, API Gateway, </p></li>
+            <li><p><a href="https://jwt.io">JWT (JSON Web Tokens)</a> is an open standard (RFC 7519) that
+                defines a compact and self-contained way for securely transmitting information between parties
+                as a JSON object. This information can be verified and trusted because it is digitally signed.
+                JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using
+                RSA.</p></li>
+            <li><p><a href="http://graphdb.ontotext.com/">GraphDB</a> is a highly-efficient and robust graph
+                database - a semantic repository that stores and manipulates RDF data along with an inference
+                engine that uses rules to infer new knowledge - and SPARQL support.</p></li>
+            <li><p><a href="http://www.xspf.org/jspf/">JSPF</a> represents the JSON version of the XSPF (XML
+                Shareable Playlist Format) and it is a next-generation playlist format for digital media
+                (songs).</p></li>
+        </ul>
+    </section>
+    <section typeof="sa:Methods" id="architecture">
+        <h2>Architecture</h2>
+        <figure typeof="sa:Image">
+            <img src="public/resources/general_architecture.png" width="880" height="655">
+            <figcaption>
+                <center>The general architecture of Music Smart Enhancer</center>
+            </figcaption>
+        </figure>
+        <section id="serverless-side">
+            <h3>'serverless'-side</h3>
+
+            <aside typeof="schema:WPSideBar">
+                <center>The two main paradigms used in the design of MuSeR are 'serverless' and
+                    'microservices'.
+                </center>
+            </aside>
+
+            <p>
+                <strong>'serverless'</strong> states that the functionalities of the application should not
+                depend on any server entity and they should run unknowingly 'anywhere' (e.g. cloud). The Node
+                module 'serverless' toolkit helps us describe and deploy the mechanisms of our application in
+                the AWS Lambda, the cloud service used to 'host' the main workhorses.
+            </p>
+
+            <p>
+                <strong>Microservices</strong> architectural style represents a distinctive method of conceiving
+                software systems. Each functionality or service is independent, deployable, small and modular,
+                meaning that each one is as decoupled as possible from another. Combining this concept with the
+                'serverless' concept, each microservice in our application runs in a separate AWS Lambda unified
+                by a central API Gateway. This one respects the REST API concepts and it will expose different
+                paths for each microservice:
                 <ul>
-                    <li><p><a href="https://nodejs.org/en/">NodeJS</a> is an open-source server side runtime environment
-                        built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous)
-                        I/O and cross-platform runtime environment for building highly scalable server-side application
-                        using JavaScript.</p></li>
-                    <li><p><a href="https://serverless.com/">serverless</a> is a framework & toolkit that helps
-                        developers focus on the application architecture, functionalities and details and not on the
-                        infrastructure. It provides various useful mechanisms for deploying code in the Cloud provider
-                        services (e.g. AWS Lambda), Cloud authorization, testing and much more.</p></li>
-                    <li><p><a href="http://ionicframework.com/docs/">Ionic</a> is the open-source mobile app development
-                        framework that makes it easy to build top quality native and progressive web apps with web
-                        technologies. Ionic is based on Angular and comes with many significant performance, usability,
-                        and feature improvements over the past versions.</p></li>
-                    <li><p><a href="https://angular.io/">Angular</a> is a structural framework for dynamic web apps. It
-                        lets you use HTML as your template language and lets you extend HTML's syntax to express your
-                        application's components clearly and succinctly. AngularJS's data binding and dependency
-                        injection eliminate much of the code you would otherwise have to write. And it all happens
-                        within the browser, making it an ideal partner with any server technology.</p></li>
-                    <li><p><a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> is the Cloud product - IaaS -
-                        provided by Amazon featuring a huge set of services, technologies, storage solutions, logging
-                        and many others more. MuSeR mainly uses Lambda, Elastic Computing 2, API Gateway, </p></li>
-                    <li><p><a href="https://jwt.io">JWT (JSON Web Tokens)</a> is an open standard (RFC 7519) that
-                        defines a compact and self-contained way for securely transmitting information between parties
-                        as a JSON object. This information can be verified and trusted because it is digitally signed.
-                        JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using
-                        RSA.</p></li>
-                    <li><p><a href="http://graphdb.ontotext.com/">GraphDB</a> is a highly-efficient and robust graph
-                        database - a semantic repository that stores and manipulates RDF data along with an inference
-                        engine that uses rules to infer new knowledge - and SPARQL support.</p></li>
-                    <li><p><a href="http://www.xspf.org/jspf/">JSPF</a> represents the JSON version of the XSPF (XML
-                        Shareable Playlist Format) and it is a next-generation playlist format for digital media
-                        (songs).</p></li>
-                </ul>
-            </section>
-            <section typeof="sa:Methods" id="architecture">
-                <h2>Architecture</h2>
+                    <li>
+            <p><code>PlaylistService</code> - the main, most important service of MuSeR; it will provide
+                'C.R.U.D.' operations for playlists and the data will be fetched by making calls to other
+                services (described below)</p></li>
+            <li><p><code>ArtistService</code> - the service used to fetch information about artists, their
+                records, biography and other details</p></li>
+            <li><p><code>SongService</code> - the service that finds recordings and details about their creators
+                and albums containing them</p></li>
+            <li><p><code>AlbumService</code> - the service that searches collections created by artists and that
+                contain songs</p></li>
+            <li><p><code>GenreService</code> - the service that finds genres entities</p></li>
+            <li><p><code>EventService</code> - the service used to discover nearby events related to music</p>
+            </li>
+            </ul>
+            Each microservice interrogates RDF datasources - WikiData and DBPedia - and also the Spotify service
+            to find information, entities and relationships between entities and stores them into MuSeR's RDF
+            storage implemented with GraphDB.
+            </p>
+
+            <p>
+                <strong>Authentication</strong> components relies on the JSON Web Token technology that is used
+                by an 'authorizer' represented by an AWS Lambda function. Each call of the REST API exposed by
+                MuSeR requires the auth token and the access is forbidden if it is invalid or missing.
+            </p>
+        </section>
+
+        <section id="client-side">
+            <h3>Client-side</h3>
+
+
+            The <strong>User Interface</strong> of the application will be created with the help of - maybe -
+            the most popular cross-platform 'web-technologies' framework: Ionic, a fully fledged framework
+            having Angular as the foundation client-side framework and Cordova as the main development
+            environment which supports mobile devices and plugins for a whole suite of services and features.
+
+            <ul>
+                <li><p><strong>Home View</strong> is the starting view of the application and it provides a list
+                    of the most popular songs 'Made for you'. The user is also able to browse genres and the top
+                    charts for each one them</p></li>
+
+                <li><p><strong>Genre View</strong> will show the most popular songs for the respective genre and
+                    a timeline with notable events</p></li>
+
+                <li><p><strong>Discover View</strong> is the main way of finding artists, songs, albums; the
+                    user can specify what kind of entity to look for and the results will be displayed in a
+                    paginated list below</p></li>
+
+                <li><p><strong>Artist View</strong> contains the biography of the respective artist (or band)
+                    and the most popular songs recorded by him (them); the application will also suggest artists
+                    featured on the main artist's songs, the last release albums and also events that the artist
+                    will attend to</p></li>
+
+                <li><p><strong>Album View</strong> shows information about the record and the list of songs
+                    contained by it; it will also suggest other albums from the same artist</p></li>
+
+                <li><p><strong>Song Page</strong> exposes available links to Spotify / YouTube that the user can
+                    access to listen to the song; it can be also added to a personal list</p></li>
+
+                <li><p><strong>Library Page</strong> can be used to manage the personal playlists (import,
+                    export, edit); an interesting feature of this view is the 'smart playlist' generation that
+                    can be done via user-typed keywords, historical data or entities contained by other
+                    playlists</p></li>
+            </ul>
+
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/home_page.png">
+                <figcaption>
+                    The Home View
+                </figcaption>
+            </figure>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/group/genre_view.png">
+                <figcaption>
+                    The Genre View
+                </figcaption>
+            </figure>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/group/discover_view.png">
+                <figcaption>
+                    The Discover View
+                </figcaption>
+            </figure>
+
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/group/artist_view.png">
+                <figcaption>
+                    The Artist View
+                </figcaption>
+            </figure>
+
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/album_view.png">
+                <figcaption>
+                    The Album View
+                </figcaption>
+            </figure>
+
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/song_view.png">
+                <figcaption>
+                    The Song View
+                </figcaption>
+            </figure>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/mocks/group/library_view.png">
+                <figcaption>
+                    The Library View
+                </figcaption>
+            </figure>
+
+
+        </section>
+
+        <section id="design-details">
+            <h3>Design Details</h3>
+            <ul>
+                <li>
+                    <p>
+                        Being a 'microservices-serverless-oriented' application, each functionality will dwell
+                        into a AWS Lambda. Each of it will interrogate different datasources upon the search
+                        request of an entity. After the result will be returned successfully, the entity
+                        instance will be saved in the MuSeR's RDF storage and interlinked with other entities.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The user must register and generate a JWT before using the REST API exposed by MuSer.
+                        Every subsequent call of the API will require the token.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The 'preferred' data transfer MIME type of MuSeR is <code>application/json</code> for
+                        the ease of use and the nice integration with Javascript and NodeJS.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Each instance's view for an entity type (e.g. an Artist or a Song) will smartly suggest
+                        other instances of the same entity type taking into consideration different aspects
+                        related to it: genre, time period, preferences etc.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Playlists can be accessed via a SPARQL endpoint that will provide a way of accessing the
+                        data from the RDF Storage (GraphDB). They can also be imported into / exported from
+                        MuSeR under the JSPF format.
+                    </p>
+                </li>
+            </ul>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/sequence_get_artist.png">
+                <figcaption>
+                    <center>Sequence Diagram: Get Artist</center>
+                </figcaption>
+            </figure>
+
+            <p>
+                The above sequence diagram presents the workflow of retrieving information about an artist.
+                First, we validate the token received from the client and if the validation is successful, a lambda
+                function will be triggered.
+                The function will retrieve the information from the RDF datasource, based on the id that was received
+                with the request. Otherwise, if the token validation fails, the request will be denied.
+            </p>
+
+            <figure typeof="sa:Image">
+                <img src="public/resources/sequence_generate_playlist.png">
+                <figcaption>
+                    <center>Sequence Diagram: Generate 'smart' playlist</center>
+                </figcaption>
+            </figure>
+            <p>
+                The above diagram presents the actions that will be performed to generate a 'smart' playlist.
+                First, a token validation is made and if the validation is successful, the playlist will be generated
+                base on the options that have been selected by the user. This action is being performed by a specialized
+                lambda function. The client will be able to generate 'smart' playlist based on : keywords, history and
+                owned playlists. Otherwise, if the token validation fails, the request will be denied.
+
+            </p>
+
+            <section id="data-modelling">
+                <h4>Data Modelling</h4>
+
                 <figure typeof="sa:Image">
-                    <img src="public/resources/general_architecture.png" width="880" height="655">
+                    <img src="public/resources/rdf_graph.png">
                     <figcaption>
-                        <center>The general architecture of Music Smart Enhancer</center>
+                        <center>The diagram representing the RDF graph - Music Ontology</center>
                     </figcaption>
                 </figure>
-                <section id="serverless-side">
-                    <h3>'serverless'-side</h3>
 
-                    <aside typeof="schema:WPSideBar">
-                        <center>The two main paradigms used in the design of MuSeR are 'serverless' and
-                            'microservices'.
-                        </center>
-                    </aside>
+                <p>The MuSeR's main storage is the RDF solution <strong>GraphDB</strong>. Every entity is saved
+                    in the graph (see the diagram above) by interconnecting the relationship with other entities
+                    and properties.</p>
 
-                    <p>
-                        <strong>'serverless'</strong> states that the functionalities of the application should not
-                        depend on any server entity and they should run unknowingly 'anywhere' (e.g. cloud). The Node
-                        module 'serverless' toolkit helps us describe and deploy the mechanisms of our application in
-                        the AWS Lambda, the cloud service used to 'host' the main workhorses.
-                    </p>
+                <p>In the tables below we describe each entities' properties.</p>
 
-                    <p>
-                        <strong>Microservices</strong> architectural style represents a distinctive method of conceiving
-                        software systems. Each functionality or service is independent, deployable, small and modular,
-                        meaning that each one is as decoupled as possible from another. Combining this concept with the
-                        'serverless' concept, each microservice in our application runs in a separate AWS Lambda unified
-                        by a central API Gateway. This one respects the REST API concepts and it will expose different
-                        paths for each microservice:
-                        <ul>
-                            <li>
-                    <p><code>PlaylistService</code> - the main, most important service of MuSeR; it will provide
-                        'C.R.U.D.' operations for playlists and the data will be fetched by making calls to other
-                        services (described below)</p></li>
-                    <li><p><code>ArtistService</code> - the service used to fetch information about artists, their
-                        records, biography and other details</p></li>
-                    <li><p><code>SongService</code> - the service that finds recordings and details about their creators
-                        and albums containing them</p></li>
-                    <li><p><code>AlbumService</code> - the service that searches collections created by artists and that
-                        contain songs</p></li>
-                    <li><p><code>GenreService</code> - the service that finds genres entities</p></li>
-                    <li><p><code>EventService</code> - the service used to discover nearby events related to music</p>
-                    </li>
-                    </ul>
-                    Each microservice interrogates RDF datasources - WikiData and DBPedia - and also the Spotify service
-                    to find information, entities and relationships between entities and stores them into MuSeR's RDF
-                    storage implemented with GraphDB.
-                    </p>
+                <figure typeof="schema:Table">
+                    <table>
+                        <thead>
+                        <tr><code>Playlist</code></tr>
+                        <tr>
+                            <th>
+                                <center>Property</center>
+                            </th>
+                            <th>
+                                <center>Type</center>
+                            </th>
+                            <th>
+                                <center>Description</center>
+                            </th>
+                        </tr>
+                        </thead>
 
-                    <p>
-                        <strong>Authentication</strong> components relies on the JSON Web Token technology that is used
-                        by an 'authorizer' represented by an AWS Lambda function. Each call of the REST API exposed by
-                        MuSeR requires the auth token and the access is forbidden if it is invalid or missing.
-                    </p>
-                </section>
+                        <tr>
+                            <td>id</td>
+                            <td>UUID</td>
+                            <td>the unique UUID of the playlist</td>
+                        </tr>
+                        <tr>
+                            <td>title</td>
+                            <td>string</td>
+                            <td>the title of the playlist</td>
+                        </tr>
+                        <tr>
+                            <td>songs</td>
+                            <td>array [Song]</td>
+                            <td>the list of songs</td>
+                        </tr>
+                        <tr>
+                            <td>date_created</td>
+                            <td>date</td>
+                            <td>the creation date of the playlist</td>
+                        </tr>
+                        <tr>
+                            <td>creator</td>
+                            <td>string</td>
+                            <td>the creator of the playlist</td>
+                        </tr>
+                        <tr>
+                            <td>duration</td>
+                            <td>int</td>
+                            <td>the total duration of the playlist (sum of duration of all the songs)</td>
+                        </tr>
 
-                <section id="client-side">
-                    <h3>Client-side</h3>
+                        <caption>
+                            The list of properties of the <code>Playlist</code> entity along with their data
+                            types.
+                        </caption>
+                    </table>
+                </figure>
 
+                <figure typeof="schema:Table">
+                    <table>
+                        <thead>
+                        <tr><code>Artist</code></tr>
+                        <tr>
+                            <th>
+                                <center>Property</center>
+                            </th>
+                            <th>
+                                <center>Type</center>
+                            </th>
+                            <th>
+                                <center>Description</center>
+                            </th>
+                        </tr>
+                        </thead>
 
-                    The <strong>User Interface</strong> of the application will be created with the help of - maybe -
-                    the most popular cross-platform 'web-technologies' framework: Ionic, a fully fledged framework
-                    having Angular as the foundation client-side framework and Cordova as the main development
-                    environment which supports mobile devices and plugins for a whole suite of services and features.
+                        <tr>
+                            <td>id</td>
+                            <td>UUID</td>
+                            <td>the unique UUID of the playlist</td>
+                        </tr>
+                        <tr>
+                            <td>id_wikidata</td>
+                            <td>string</td>
+                            <td>the unique ID from Wikidata</td>
+                        </tr>
+                        <tr>
+                            <td>id_dbpedia</td>
+                            <td>string</td>
+                            <td>the unique ID from DBPedia</td>
+                        </tr>
+                        <tr>
+                            <td>about</td>
+                            <td>string</td>
+                            <td>description of the artist (band)</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>string</td>
+                            <td>the artist's (band's) full name</td>
+                        </tr>
+                        <tr>
+                            <td>genres</td>
+                            <td>array [Genre]</td>
+                            <td>the list of genres representing the artist's (band's) style</td>
+                        </tr>
 
-                    <ul>
-                        <li><p><strong>Home View</strong> is the starting view of the application and it provides a list
-                            of the most popular songs 'Made for you'. The user is also able to browse genres and the top
-                            charts for each one them</p></li>
+                        <tr>
+                            <td>members</td>
+                            <td>array [Artist]</td>
+                            <td>array of Artist members - composite relationship</td>
+                        </tr>
 
-                        <li><p><strong>Genre View</strong> will show the most popular songs for the respective genre and
-                            a timeline with notable events</p></li>
+                        <tr>
+                            <td>country</td>
+                            <td>string</td>
+                            <td>the origin country of the artist (band)</td>
+                        </tr>
 
-                        <li><p><strong>Discover View</strong> is the main way of finding artists, songs, albums; the
-                            user can specify what kind of entity to look for and the results will be displayed in a
-                            paginated list below</p></li>
+                        <tr>
+                            <td>songs</td>
+                            <td>array [Song]</td>
+                            <td>the list of songs recorded by artist (band)</td>
+                        </tr>
 
-                        <li><p><strong>Artist View</strong> contains the biography of the respective artist (or band)
-                            and the most popular songs recorded by him (them); the application will also suggest artists
-                            featured on the main artist's songs, the last release albums and also events that the artist
-                            will attend to</p></li>
+                        <tr>
+                            <td>inception_date</td>
+                            <td>date</td>
+                            <td>the inception date of the artist (band)</td>
+                        </tr>
 
-                        <li><p><strong>Album View</strong> shows information about the record and the list of songs
-                            contained by it; it will also suggest other albums from the same artist</p></li>
+                        <tr>
+                            <td>retiring_date</td>
+                            <td>date</td>
+                            <td>the retiring date of the artist (band)</td>
+                        </tr>
 
-                        <li><p><strong>Song Page</strong> exposes available links to Spotify / YouTube that the user can
-                            access to listen to the song; it can be also added to a personal list</p></li>
+                        <caption>
+                            The list of properties of the <code>Artist</code> entity along with their data
+                            types.
+                        </caption>
+                    </table>
+                </figure>
 
-                        <li><p><strong>Library Page</strong> can be used to manage the personal playlists (import,
-                            export, edit); an interesting feature of this view is the 'smart playlist' generation that
-                            can be done via user-typed keywords, historical data or entities contained by other
-                            playlists</p></li>
-                    </ul>
+            </section><!-- data-modelling -->
+        </section>
 
+        <section id="file-headers">
+            <h3>File &amp; Supporting Structure</h3>
+            <p>
+                The document must be encoded in UTF-8, and transmitted with a media type of
+                <code>text/html</code>. It must feature a <code>DOCTYPE</code> as its preamble.
+            </p>
+            <p>
+                The <code>html</code> root element must feature a valid <code>lang</code> attribute.
+            </p>
+            <p>
+                The <code>head</code> element of the document must contain a
+                <code class="language-html">&lt;meta charset="utf-8"></code> element (preferable as its
+                first child), a
+                <code class="language-html">&lt;meta name="viewport" content="width=device-width"></code>
+                element (and no other viewport <code>meta</code>), and a <code>title</code> element. All
+                the other content of the <code>head</code> is ignored.
+            </p>
+            <p>
+                The <code>body</code> element must have a <code>prefix</code> attribute, which must
+                declare the following mapping:
+            </p>
 
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/home_page.png">
-                        <figcaption>
-                            The Home View
-                        </figcaption>
-                    </figure>
+            <figure typeof="schema:Table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Prefix</th>
+                        <th>URL</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>schema</td>
+                        <td>http://schema.org/</td>
+                    </tr>
+                    <tr>
+                        <td>xsd</td>
+                        <td>http://www.w3.org/2001/XMLSchema#</td>
+                    </tr>
+                    <tr>
+                        <td>sa</td>
+                        <td>https://ns.science.ai/</td>
+                    </tr>
+                    <caption>
+                        The list of mappings that must be declared by the <code>body</code> element.
+                    </caption>
+                </table>
+            </figure>
 
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/group/genre_view.png">
-                        <figcaption>
-                            The Genre View
-                        </figcaption>
-                    </figure>
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/group/discover_view.png">
-                        <figcaption>
-                            The Discover View
-                        </figcaption>
-                    </figure>
-
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/group/artist_view.png">
-                        <figcaption>
-                            The Artist View
-                        </figcaption>
-                    </figure>
-
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/album_view.png">
-                        <figcaption>
-                            The Album View
-                        </figcaption>
-                    </figure>
-
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/song_view.png">
-                        <figcaption>
-                            The Song View
-                        </figcaption>
-                    </figure>
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/mocks/group/library_view.png">
-                        <figcaption>
-                            The Library View
-                        </figcaption>
-                    </figure>
-
-
-                </section>
-
-                <section id="design-details">
-                    <h3>Design Details</h3>
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/sequence_get_artist.png">
-                        <figcaption>
-                            <center>Sequence Diagram: Get Artist</center>
-                        </figcaption>
-                    </figure>
-
-                    <figure typeof="sa:Image">
-                        <img src="public/resources/sequence_generate_playlist.png">
-                        <figcaption>
-                            <center>Sequence Diagram: Generate 'smart' playlist</center>
-                        </figcaption>
-                    </figure>
-
-                    <ul>
-                        <li>
-                            <p>
-                                Being a 'microservices-serverless-oriented' application, each functionality will dwell
-                                into a AWS Lambda. Each of it will interrogate different datasources upon the search
-                                request of an entity. After the result will be returned successfully, the entity
-                                instance will be saved in the MuSeR's RDF storage and interlinked with other entities.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                The user must register and generate a JWT before using the REST API exposed by MuSer.
-                                Every subsequent call of the API will require the token.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                The 'preferred' data transfer MIME type of MuSeR is <code>application/json</code> for
-                                the ease of use and the nice integration with Javascript and NodeJS.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                Each instance's view for an entity type (e.g. an Artist or a Song) will smartly suggest
-                                other instances of the same entity type taking into consideration different aspects
-                                related to it: genre, time period, preferences etc.
-                            </p>
-                        </li>
-
-                        <li>
-                            <p>
-                                Playlists can be accessed via a SPARQL endpoint that will provide a way of accessing the
-                                data from the RDF Storage (GraphDB). They can also be imported into / exported from
-                                MuSeR under the JSPF format.
-                            </p>
-                        </li>
-                    </ul>
-
-                    <section id="data-modelling">
-                        <h4>Data Modelling</h4>
-
-                        <figure typeof="sa:Image">
-                            <img src="public/resources/rdf_graph.png">
-                            <figcaption>
-                                <center>The diagram representing the RDF graph - Music Ontology</center>
-                            </figcaption>
-                        </figure>
-
-                        <p>The MuSeR's main storage is the RDF solution <strong>GraphDB</strong>. Every entity is saved
-                            in the graph (see the diagram above) by interconnecting the relationship with other entities
-                            and properties.</p>
-
-                        <p>In the tables below we describe each entities' properties.</p>
-
-                        <figure typeof="schema:Table">
-                            <table>
-                                <thead>
-                                <tr><code>Playlist</code></tr>
-                                <tr>
-                                    <th>
-                                        <center>Property</center>
-                                    </th>
-                                    <th>
-                                        <center>Type</center>
-                                    </th>
-                                    <th>
-                                        <center>Description</center>
-                                    </th>
-                                </tr>
-                                </thead>
-
-                                <tr>
-                                    <td>id</td>
-                                    <td>UUID</td>
-                                    <td>the unique UUID of the playlist</td>
-                                </tr>
-                                <tr>
-                                    <td>title</td>
-                                    <td>string</td>
-                                    <td>the title of the playlist</td>
-                                </tr>
-                                <tr>
-                                    <td>songs</td>
-                                    <td>array [Song]</td>
-                                    <td>the list of songs</td>
-                                </tr>
-                                <tr>
-                                    <td>date_created</td>
-                                    <td>date</td>
-                                    <td>the creation date of the playlist</td>
-                                </tr>
-                                <tr>
-                                    <td>creator</td>
-                                    <td>string</td>
-                                    <td>the creator of the playlist</td>
-                                </tr>
-                                <tr>
-                                    <td>duration</td>
-                                    <td>int</td>
-                                    <td>the total duration of the playlist (sum of duration of all the songs)</td>
-                                </tr>
-
-                                <caption>
-                                    The list of properties of the <code>Playlist</code> entity along with their data
-                                    types.
-                                </caption>
-                            </table>
-                        </figure>
-
-                        <figure typeof="schema:Table">
-                            <table>
-                                <thead>
-                                <tr><code>Artist</code></tr>
-                                <tr>
-                                    <th>
-                                        <center>Property</center>
-                                    </th>
-                                    <th>
-                                        <center>Type</center>
-                                    </th>
-                                    <th>
-                                        <center>Description</center>
-                                    </th>
-                                </tr>
-                                </thead>
-
-                                <tr>
-                                    <td>id</td>
-                                    <td>UUID</td>
-                                    <td>the unique UUID of the playlist</td>
-                                </tr>
-                                <tr>
-                                    <td>id_wikidata</td>
-                                    <td>string</td>
-                                    <td>the unique ID from Wikidata</td>
-                                </tr>
-                                <tr>
-                                    <td>id_dbpedia</td>
-                                    <td>string</td>
-                                    <td>the unique ID from DBPedia</td>
-                                </tr>
-                                <tr>
-                                    <td>about</td>
-                                    <td>string</td>
-                                    <td>description of the artist (band)</td>
-                                </tr>
-                                <tr>
-                                    <td>name</td>
-                                    <td>string</td>
-                                    <td>the artist's (band's) full name</td>
-                                </tr>
-                                <tr>
-                                    <td>genres</td>
-                                    <td>array [Genre]</td>
-                                    <td>the list of genres representing the artist's (band's) style</td>
-                                </tr>
-
-                                <tr>
-                                    <td>members</td>
-                                    <td>array [Artist]</td>
-                                    <td>array of Artist members - composite relationship</td>
-                                </tr>
-
-                                <tr>
-                                    <td>country</td>
-                                    <td>string</td>
-                                    <td>the origin country of the artist (band)</td>
-                                </tr>
-
-                                <tr>
-                                    <td>songs</td>
-                                    <td>array [Song]</td>
-                                    <td>the list of songs recorded by artist (band)</td>
-                                </tr>
-
-                                <tr>
-                                    <td>inception_date</td>
-                                    <td>date</td>
-                                    <td>the inception date of the artist (band)</td>
-                                </tr>
-
-                                <tr>
-                                    <td>retiring_date</td>
-                                    <td>date</td>
-                                    <td>the retiring date of the artist (band)</td>
-                                </tr>
-
-                                <caption>
-                                    The list of properties of the <code>Artist</code> entity along with their data
-                                    types.
-                                </caption>
-                            </table>
-                        </figure>
-
-                    </section><!-- data-modelling -->
-                </section>
-
-                <section id="file-headers">
-                    <h3>File &amp; Supporting Structure</h3>
-                    <p>
-                        The document must be encoded in UTF-8, and transmitted with a media type of
-                        <code>text/html</code>. It must feature a <code>DOCTYPE</code> as its preamble.
-                    </p>
-                    <p>
-                        The <code>html</code> root element must feature a valid <code>lang</code> attribute.
-                    </p>
-                    <p>
-                        The <code>head</code> element of the document must contain a
-                        <code class="language-html">&lt;meta charset="utf-8"></code> element (preferable as its
-                        first child), a
-                        <code class="language-html">&lt;meta name="viewport" content="width=device-width"></code>
-                        element (and no other viewport <code>meta</code>), and a <code>title</code> element. All
-                        the other content of the <code>head</code> is ignored.
-                    </p>
-                    <p>
-                        The <code>body</code> element must have a <code>prefix</code> attribute, which must
-                        declare the following mapping:
-                    </p>
-
-                    <figure typeof="schema:Table">
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>Prefix</th>
-                                <th>URL</th>
-                            </tr>
-                            </thead>
-                            <tr>
-                                <td>schema</td>
-                                <td>http://schema.org/</td>
-                            </tr>
-                            <tr>
-                                <td>xsd</td>
-                                <td>http://www.w3.org/2001/XMLSchema#</td>
-                            </tr>
-                            <tr>
-                                <td>sa</td>
-                                <td>https://ns.science.ai/</td>
-                            </tr>
-                            <caption>
-                                The list of mappings that must be declared by the <code>body</code> element.
-                            </caption>
-                        </table>
-                    </figure>
-
-                    <p>
-                        Having to declare prefixes is undoubtably an annoyance and it does hurt the human
-                        authorability of the format (since hand-creating a document essentially requires a
-                        boilerplate prefix declaration). This trade-off is made for several reasons. The most
-                        important motivation is that having predictable prefixes means that the content can be
-                        styled with CSS using reliable attribute selectors on the semantic information that
-                        describes the document’s structure. The alternative would be to use URLs everywhere,
-                        such that instead of <code>sa:Abstract</code> we would have
-                        <code>https://ns.science.ai/Abstract</code>; but in practice that approach is more
-                        painful since the content then becomes bloated with URLs that are longer than is
-                        comfortable.
-                    </p>
-                    <p>
-                        The RDFa content of the article must systematically make use of these prefixes when the
-                        values match their URLs as prefixes. Authors may declare other prefix-URL mappings in
-                        the <code>prefix</code> attribute of the <code>body</code> element (or
-                        <code>prefix</code> attributes elsewhere), including other prefixes mapping to the same
-                        URLs if needed, but inside of the article’s content these prefixes must be used for
-                        these URLs.
-                    </p>
-                </section>
-                <section id="article">
-                    <h3>Article Structure</h3>
-                    <p>
-                        The article content is everything that is contained inside the first
-                        <code>article</code> element in document order that has a
-                        <code>typeof="schema:ScholarlyArticle"</code>. Everything part of the <code>body</code>
-                        outside of that subtree is ignored. This enables publishers to surround the article
-                        content with any amount of supporting markup, for instance for headers, footers,
-                        or navigation, as well as to wrap the article inside arbitrary markup that may be
-                        needed for stylistic reasons.
-                    </p>
-                    <p>
-                        The <code>article</code> element should have
-                        a <code>resource</code> attribute, usually with a value
-                        of <code>#</code>. The reason for that is to grant it a
-                        URL that can be targeted by other properties. The
-                        <code>resource</code> attribute can take any value, but it
-                        must then be matched by the
-                        <code>about</code> attributes of the properties targeting
-                        it. If <code>resource</code> is omitted, the only way in
-                        which those properties can target it is by knowing the URL
-                        from which the document was retrieved.
-                    </p>
-                    <p>
-                        The first element child of the <code>article</code> element must be an <code>h1</code>
-                        heading that serves as the primary title for the document. It may itself contain markup.
-                        The white-space-normalised text value of the <code>h1</code> must appear as a substring
-                        of the white-space-normalised text value of the <code>title</code> element. This ensures
-                        semantic alignment between the two, while enabling publishers to add their name to the
-                        <code>title</code> so as to identify themselves there alongside the content.
-                    </p>
-                    <p>
-                        Any children of <code>article</code> that are not <code>section</code> elements are
-                        ignored.
-                    </p>
-                    <p>
-                        The first <code>section</code> child element of the <code>article</code> must be the
-                        <a href="#authors">Authors and Affiliations</a> section. It has no <code>typeof</code>
-                        and its specific rules are outlined in its own chapter below.
-                    </p>
-                    <p>
-                        The <code>section</code> elements can be nested arbitrarily deep. Each
-                        <code>section</code> element must have as its first element child an <code>hX</code>
-                        heading element the numeric part of which must be the number of <code>section</code>
-                        ancestor elements that heading elements has up to the <code>article</code> element, plus
-                        one. If the numeric part is greater than 6, then <code>h6</code> must be used but an
-                        <code>aria-level</code> attribute must be added that reflects the accurate depth.
-                        (The <code>aria-level</code> attribute can be used at lower depths but is not required
-                        there.)
-                    </p>
-                    <p>
-                        Each <code>section</code> element may contain an arbitrary number of
-                        <a href="#hunk-elements">hunk elements</a>, followed by an arbitrary number of
-                        <code>section</code> elements being subsections. Note that
-                        <a href="#hunk-elements">hunk elements</a> must imperatively appear <em>before</em> the
-                        subsections.
-                    </p>
-                    <p>
-                        Sections are expected to be typed using the <code>typeof</code> attribute. The following
-                        <code>typeof</code> values are currently understood:
-                    </p>
-                    <ul>
-                        <li><code>sa:Funding</code> (which has its <a href="#funding">specific structure</a>)</li>
-                        <li><code>sa:Abstract</code></li>
-                        <li><code>sa:MaterialsAndMethods</code></li>
-                        <li><code>sa:Results</code></li>
-                        <li><code>sa:Conclusion</code></li>
-                        <li><code>sa:Acknowledgements</code></li>
-                        <li><code>sa:ReferenceList</code></li>
-                    </ul>
-                    <p>
-                        Hopefully these types are largely self-documenting, they are described further in the
-                        Scholarly Article ontology
-                        (<a href="#ref-sa-ontology" property="schema:citation">Science.AI, 2015a</a>).
-                    </p>
-                    <p>
-                        The section typed <code>sa:ReferenceList</code> has special processing rules described
-                        in the <a href="#references-section">References section</a>.
-                    </p>
-                </section>
-                <section id="hunk-elements">
-                    <h3>Hunk Elements</h3>
-                    <p>
-                        <dfn>Hunk elements</dfn> are the meaningful blocks from which sections are built. They
-                        contain text and <a href="#inline-element">inline elements</a>. There are several
-                        types of hunk elements.
-                    </p>
-                    <p>
-                        The most common hunk element is <code>p</code>, which is used to capture paragraphs. It
-                        requires no special processing.
-                    </p>
-                    <p>
-                        The <code>blockquote</code>, <code>ul</code>, <code>ol</code>, and <code>dl</code>
-                        elements can be used as they typically would and require no special treatment.
-                    </p>
-                    <p>
-                        The <code>aside</code> hunk element is used to capture text boxes. If it contains an
-                        <code>hX</code> heading element, that element must be its first element child and its
-                        numeric part must reflect its depth, making use of <code>aria-level</code> according to
-                        the same rules as apply for <code>section</code>. The other children of
-                        <code>aside</code> must all be hunk elements.
-                    </p>
-                    <p>
-                        The <code>figure</code> element is a general container for content units that are
-                        embedded inside the main body of the text. It can come in several flavours that are
-                        dictated by its <code>typeof</code> attribute.
-                    </p>
-                    <p>
-                        If <code>figure</code> has <code>typeof="sa:Image"</code> then it is an image container.
-                        It must contain an <code>img</code> child element and should contain a
-                        <code>figcaption</code> labelling that image. An example of an image figure would be:
-                    </p>
-                    <figure typeof="sa:Image">
-                        <!-- <img src="public/resources/hop-less.png" width="880" height="655"> -->
-                        <figcaption>
-                            Reconstruction of Sthenurus stirlingi, by Brian Regal; in
-                            «<cite><a
-                                href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109888">Locomotion
-                            in Extinct Giant Kangaroos: Were Sthenurines Hop-Less Monsters?</a></cite>», by
-                            Christine M. Janis, Karalyn Buttrill, Borja Figueirido.
-                        </figcaption>
-                    </figure>
-                    <p>
-                        If <code>figure</code> has <code>typeof="sa:Table"</code> then it is a table container.
-                        It must contain nothing other than a <code>table</code> element. If a caption is
-                        available, it should be included using the <code>caption</code> child element of the
-                        <code>table</code>, and not the <code>figcaption</code> child of the
-                        <code>figure</code>.
-                    </p>
-                    <p>
-                        If <code>figure</code> has <code>typeof="sa:Formula"</code> then it is a formula
-                        container. It must contain a <code>math</code> element and optionally a
-                        <code>figcaption</code> describing the formula. The <code>math</code> element must be
-                        valid MathML 3. Additionally, given the dismal state of support for MathML in Web
-                        browser the <code>math</code> element must contain an <code>annotation</code>
-                        descendant with the TeX equivalent of the formula.
-                    </p>
-                    <p>
-                        If <code>figure</code> has <code>typeof="schema:SoftwareSourceCode"</code>
-                        then it is a code container. It must contain a <code>pre</code> element
-                        and optionally a <code>figcaption</code>. The <code>pre</code> element must contain as
-                        its only child a <code>code</code> element.
-                    </p>
-                    <p>
-                        If you wish to specify the type of the language used in the code, the
-                        <code>figure</code> needs to have a <code>schema:programmingLanguage</code> property
-                        containing a type <code>schema:Language</code>, itself with a <code>schema:name</code>
-                        containing the the lowercase name of one of the languages from the
-                        <a
-                                href="https://github.com/scienceai/list-of-programming-languages/blob/master/data/data.jsonld">list
-                            of programming languages</a>. Canonically, this would look like the following source:
-                    </p>
-                    <figure typeof="schema:SoftwareSourceCode">
-                        <meta property="schema:name" content="html">
-                        <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
+            <p>
+                Having to declare prefixes is undoubtably an annoyance and it does hurt the human
+                authorability of the format (since hand-creating a document essentially requires a
+                boilerplate prefix declaration). This trade-off is made for several reasons. The most
+                important motivation is that having predictable prefixes means that the content can be
+                styled with CSS using reliable attribute selectors on the semantic information that
+                describes the document’s structure. The alternative would be to use URLs everywhere,
+                such that instead of <code>sa:Abstract</code> we would have
+                <code>https://ns.science.ai/Abstract</code>; but in practice that approach is more
+                painful since the content then becomes bloated with URLs that are longer than is
+                comfortable.
+            </p>
+            <p>
+                The RDFa content of the article must systematically make use of these prefixes when the
+                values match their URLs as prefixes. Authors may declare other prefix-URL mappings in
+                the <code>prefix</code> attribute of the <code>body</code> element (or
+                <code>prefix</code> attributes elsewhere), including other prefixes mapping to the same
+                URLs if needed, but inside of the article’s content these prefixes must be used for
+                these URLs.
+            </p>
+        </section>
+        <section id="article">
+            <h3>Article Structure</h3>
+            <p>
+                The article content is everything that is contained inside the first
+                <code>article</code> element in document order that has a
+                <code>typeof="schema:ScholarlyArticle"</code>. Everything part of the <code>body</code>
+                outside of that subtree is ignored. This enables publishers to surround the article
+                content with any amount of supporting markup, for instance for headers, footers,
+                or navigation, as well as to wrap the article inside arbitrary markup that may be
+                needed for stylistic reasons.
+            </p>
+            <p>
+                The <code>article</code> element should have
+                a <code>resource</code> attribute, usually with a value
+                of <code>#</code>. The reason for that is to grant it a
+                URL that can be targeted by other properties. The
+                <code>resource</code> attribute can take any value, but it
+                must then be matched by the
+                <code>about</code> attributes of the properties targeting
+                it. If <code>resource</code> is omitted, the only way in
+                which those properties can target it is by knowing the URL
+                from which the document was retrieved.
+            </p>
+            <p>
+                The first element child of the <code>article</code> element must be an <code>h1</code>
+                heading that serves as the primary title for the document. It may itself contain markup.
+                The white-space-normalised text value of the <code>h1</code> must appear as a substring
+                of the white-space-normalised text value of the <code>title</code> element. This ensures
+                semantic alignment between the two, while enabling publishers to add their name to the
+                <code>title</code> so as to identify themselves there alongside the content.
+            </p>
+            <p>
+                Any children of <code>article</code> that are not <code>section</code> elements are
+                ignored.
+            </p>
+            <p>
+                The first <code>section</code> child element of the <code>article</code> must be the
+                <a href="#authors">Authors and Affiliations</a> section. It has no <code>typeof</code>
+                and its specific rules are outlined in its own chapter below.
+            </p>
+            <p>
+                The <code>section</code> elements can be nested arbitrarily deep. Each
+                <code>section</code> element must have as its first element child an <code>hX</code>
+                heading element the numeric part of which must be the number of <code>section</code>
+                ancestor elements that heading elements has up to the <code>article</code> element, plus
+                one. If the numeric part is greater than 6, then <code>h6</code> must be used but an
+                <code>aria-level</code> attribute must be added that reflects the accurate depth.
+                (The <code>aria-level</code> attribute can be used at lower depths but is not required
+                there.)
+            </p>
+            <p>
+                Each <code>section</code> element may contain an arbitrary number of
+                <a href="#hunk-elements">hunk elements</a>, followed by an arbitrary number of
+                <code>section</code> elements being subsections. Note that
+                <a href="#hunk-elements">hunk elements</a> must imperatively appear <em>before</em> the
+                subsections.
+            </p>
+            <p>
+                Sections are expected to be typed using the <code>typeof</code> attribute. The following
+                <code>typeof</code> values are currently understood:
+            </p>
+            <ul>
+                <li><code>sa:Funding</code> (which has its <a href="#funding">specific structure</a>)</li>
+                <li><code>sa:Abstract</code></li>
+                <li><code>sa:MaterialsAndMethods</code></li>
+                <li><code>sa:Results</code></li>
+                <li><code>sa:Conclusion</code></li>
+                <li><code>sa:Acknowledgements</code></li>
+                <li><code>sa:ReferenceList</code></li>
+            </ul>
+            <p>
+                Hopefully these types are largely self-documenting, they are described further in the
+                Scholarly Article ontology
+                (<a href="#ref-sa-ontology" property="schema:citation">Science.AI, 2015a</a>).
+            </p>
+            <p>
+                The section typed <code>sa:ReferenceList</code> has special processing rules described
+                in the <a href="#references-section">References section</a>.
+            </p>
+        </section>
+        <section id="hunk-elements">
+            <h3>Hunk Elements</h3>
+            <p>
+                <dfn>Hunk elements</dfn> are the meaningful blocks from which sections are built. They
+                contain text and <a href="#inline-element">inline elements</a>. There are several
+                types of hunk elements.
+            </p>
+            <p>
+                The most common hunk element is <code>p</code>, which is used to capture paragraphs. It
+                requires no special processing.
+            </p>
+            <p>
+                The <code>blockquote</code>, <code>ul</code>, <code>ol</code>, and <code>dl</code>
+                elements can be used as they typically would and require no special treatment.
+            </p>
+            <p>
+                The <code>aside</code> hunk element is used to capture text boxes. If it contains an
+                <code>hX</code> heading element, that element must be its first element child and its
+                numeric part must reflect its depth, making use of <code>aria-level</code> according to
+                the same rules as apply for <code>section</code>. The other children of
+                <code>aside</code> must all be hunk elements.
+            </p>
+            <p>
+                The <code>figure</code> element is a general container for content units that are
+                embedded inside the main body of the text. It can come in several flavours that are
+                dictated by its <code>typeof</code> attribute.
+            </p>
+            <p>
+                If <code>figure</code> has <code>typeof="sa:Image"</code> then it is an image container.
+                It must contain an <code>img</code> child element and should contain a
+                <code>figcaption</code> labelling that image. An example of an image figure would be:
+            </p>
+            <figure typeof="sa:Image">
+                <!-- <img src="public/resources/hop-less.png" width="880" height="655"> -->
+                <figcaption>
+                    Reconstruction of Sthenurus stirlingi, by Brian Regal; in
+                    «<cite><a
+                        href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0109888">Locomotion
+                    in Extinct Giant Kangaroos: Were Sthenurines Hop-Less Monsters?</a></cite>», by
+                    Christine M. Janis, Karalyn Buttrill, Borja Figueirido.
+                </figcaption>
+            </figure>
+            <p>
+                If <code>figure</code> has <code>typeof="sa:Table"</code> then it is a table container.
+                It must contain nothing other than a <code>table</code> element. If a caption is
+                available, it should be included using the <code>caption</code> child element of the
+                <code>table</code>, and not the <code>figcaption</code> child of the
+                <code>figure</code>.
+            </p>
+            <p>
+                If <code>figure</code> has <code>typeof="sa:Formula"</code> then it is a formula
+                container. It must contain a <code>math</code> element and optionally a
+                <code>figcaption</code> describing the formula. The <code>math</code> element must be
+                valid MathML 3. Additionally, given the dismal state of support for MathML in Web
+                browser the <code>math</code> element must contain an <code>annotation</code>
+                descendant with the TeX equivalent of the formula.
+            </p>
+            <p>
+                If <code>figure</code> has <code>typeof="schema:SoftwareSourceCode"</code>
+                then it is a code container. It must contain a <code>pre</code> element
+                and optionally a <code>figcaption</code>. The <code>pre</code> element must contain as
+                its only child a <code>code</code> element.
+            </p>
+            <p>
+                If you wish to specify the type of the language used in the code, the
+                <code>figure</code> needs to have a <code>schema:programmingLanguage</code> property
+                containing a type <code>schema:Language</code>, itself with a <code>schema:name</code>
+                containing the the lowercase name of one of the languages from the
+                <a
+                        href="https://github.com/scienceai/list-of-programming-languages/blob/master/data/data.jsonld">list
+                    of programming languages</a>. Canonically, this would look like the following source:
+            </p>
+            <figure typeof="schema:SoftwareSourceCode">
+                <meta property="schema:name" content="html">
+                <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
 &lt;figure typeof="schema:SoftwareSourceCode">
   &lt;pre property="schema:programmingLanguage" typeof="schema:Language">
     &lt;meta property="schema:name" content="python">
@@ -705,96 +720,96 @@
   &lt;/figcaption>
 &lt;/figure>
             </code></pre>
-                        <figcaption>
-                            An example of HTML capturing some complex Python code
-                        </figcaption>
-                    </figure>
-                </section>
-                <section id="inline-elements">
-                    <h3>Inline Elements</h3>
-                    <p>
-                        <dfn>Inline elements</dfn> essentially decorate, describe, and enrich text. Inside of
-                        <a href="#hunk-elements">hunk elements</a>, of heading elements, and of captioning
-                        elements (<code>caption</code> and <code>figcaption</code>) the following inline
-                        elements can be used (and where applicable they can nest within one another):
-                    </p>
-                    <ul>
-                        <li><code>a</code></li>
-                        <li><code>abbr</code></li>
-                        <li><code>bdi</code></li>
-                        <li><code>bdo</code></li>
-                        <li><code>cite</code></li>
-                        <li><code>code</code></li>
-                        <li><code>data</code></li>
-                        <li><code>del</code></li>
-                        <li><code>dfn</code></li>
-                        <li><code>em</code></li>
-                        <li><code>img</code> (for small, contextual images that should not be figures)</li>
-                        <li><code>ins</code></li>
-                        <li><code>kbd</code></li>
-                        <li><code>mark</code></li>
-                        <li><code>math</code> (for inline equations that should not be figures; they must also
-                            contain a TeX annotation)
-                        </li>
-                        <li><code>meter</code></li>
-                        <li><code>q</code></li>
-                        <li><code>ruby</code> (with embedded <code>rb</code>, <code>rt</code>, <code>rtc</code>,
-                            and <code>rp</code>)
-                        </li>
-                        <li><code>samp</code></li>
-                        <li><code>span</code></li>
-                        <li><code>strong</code></li>
-                        <li><code>sub</code></li>
-                        <li><code>sup</code></li>
-                        <li><code>svg</code> (for small, contextual images that should not be figures)</li>
-                        <li><code>time</code></li>
-                        <li><code>var</code></li>
-                        <li><code>wbr</code></li>
-                    </ul>
-                    <p>
-                        If an <code>a</code> element is linking to a citation, then it must have
-                        <code>property="schema:citation"</code>; if it is linking
-                        to a figure or another creative work, it must
-                        have <code>property="schema:hasPart"</code>
-                        or <code>property="schema:isBasedOnUrl"</code>. These are
-                        known as <dfn>flavoured links</dfn>, they can be used to
-                        enhance the user experience by treating their behaviour
-                        differently from regular links.
-                    </p>
-                </section>
-                <section id="references-section">
-                    <h3>The References Section</h3>
-                    <p>
-                        The references section is a special type of <code>section</code> element with
-                        <code>typeof="sa:ReferenceList"</code>.
-                    </p>
-                    <p>
-                        Apart from its heading element, it must contain nothing other than an <code>ol</code>
-                        or a <code>dl</code> element.
-                    </p>
-                    <p>
-                        If using a <code>dl</code> element, its content must be exclusively a strictly
-                        alternating sequence of <code>dt</code> then <code>dd</code> elements, with the latter
-                        being the citation-bearing element. The <code>dt</code> is used as a label in some
-                        citation formats.
-                    </p>
-                    <p>
-                        If using an <code>ol</code>, then its content is only <code>li</code> elements that are
-                        the citation-bearing elements.
-                    </p>
-                    <p>
-                        The citation-bearing element will have an <code>id</code> and be
-                        <code>schema:Book</code> for books or
-                        <code>typeof="schema:ScholarlyArticle"</code> (or its subclass
-                        <code>schema:MedicalScholarlyArticle</code>, with probably more to come). Its
-                        content follows the «flexcite» format (being defined as part of this document, see
-                        <a href="https://github.com/scienceai/scholarly.vernacular.io/issues/4">#4</a>). The
-                        references section of this document is an example.
-                    </p>
+                <figcaption>
+                    An example of HTML capturing some complex Python code
+                </figcaption>
+            </figure>
+        </section>
+        <section id="inline-elements">
+            <h3>Inline Elements</h3>
+            <p>
+                <dfn>Inline elements</dfn> essentially decorate, describe, and enrich text. Inside of
+                <a href="#hunk-elements">hunk elements</a>, of heading elements, and of captioning
+                elements (<code>caption</code> and <code>figcaption</code>) the following inline
+                elements can be used (and where applicable they can nest within one another):
+            </p>
+            <ul>
+                <li><code>a</code></li>
+                <li><code>abbr</code></li>
+                <li><code>bdi</code></li>
+                <li><code>bdo</code></li>
+                <li><code>cite</code></li>
+                <li><code>code</code></li>
+                <li><code>data</code></li>
+                <li><code>del</code></li>
+                <li><code>dfn</code></li>
+                <li><code>em</code></li>
+                <li><code>img</code> (for small, contextual images that should not be figures)</li>
+                <li><code>ins</code></li>
+                <li><code>kbd</code></li>
+                <li><code>mark</code></li>
+                <li><code>math</code> (for inline equations that should not be figures; they must also
+                    contain a TeX annotation)
+                </li>
+                <li><code>meter</code></li>
+                <li><code>q</code></li>
+                <li><code>ruby</code> (with embedded <code>rb</code>, <code>rt</code>, <code>rtc</code>,
+                    and <code>rp</code>)
+                </li>
+                <li><code>samp</code></li>
+                <li><code>span</code></li>
+                <li><code>strong</code></li>
+                <li><code>sub</code></li>
+                <li><code>sup</code></li>
+                <li><code>svg</code> (for small, contextual images that should not be figures)</li>
+                <li><code>time</code></li>
+                <li><code>var</code></li>
+                <li><code>wbr</code></li>
+            </ul>
+            <p>
+                If an <code>a</code> element is linking to a citation, then it must have
+                <code>property="schema:citation"</code>; if it is linking
+                to a figure or another creative work, it must
+                have <code>property="schema:hasPart"</code>
+                or <code>property="schema:isBasedOnUrl"</code>. These are
+                known as <dfn>flavoured links</dfn>, they can be used to
+                enhance the user experience by treating their behaviour
+                differently from regular links.
+            </p>
+        </section>
+        <section id="references-section">
+            <h3>The References Section</h3>
+            <p>
+                The references section is a special type of <code>section</code> element with
+                <code>typeof="sa:ReferenceList"</code>.
+            </p>
+            <p>
+                Apart from its heading element, it must contain nothing other than an <code>ol</code>
+                or a <code>dl</code> element.
+            </p>
+            <p>
+                If using a <code>dl</code> element, its content must be exclusively a strictly
+                alternating sequence of <code>dt</code> then <code>dd</code> elements, with the latter
+                being the citation-bearing element. The <code>dt</code> is used as a label in some
+                citation formats.
+            </p>
+            <p>
+                If using an <code>ol</code>, then its content is only <code>li</code> elements that are
+                the citation-bearing elements.
+            </p>
+            <p>
+                The citation-bearing element will have an <code>id</code> and be
+                <code>schema:Book</code> for books or
+                <code>typeof="schema:ScholarlyArticle"</code> (or its subclass
+                <code>schema:MedicalScholarlyArticle</code>, with probably more to come). Its
+                content follows the «flexcite» format (being defined as part of this document, see
+                <a href="https://github.com/scienceai/scholarly.vernacular.io/issues/4">#4</a>). The
+                references section of this document is an example.
+            </p>
 
-                    <figure typeof="schema:SoftwareSourceCode">
-                        <meta property="schema:name" content="html">
-                        <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
+            <figure typeof="schema:SoftwareSourceCode">
+                <meta property="schema:name" content="html">
+                <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
 &lt;li id="ref-something" typeof="schema:ScholarlyArticle"
        resource="http://dx.doi.org/10.1000/182">
   &lt;span property="schema:author" typeof="schema:Person">
@@ -818,61 +833,61 @@
                       property="schema:pageEnd">4&lt;/span>
 &lt;/li>
             </code></pre>
-                        <figcaption>
-                            A citation (not yet in Flexcite format).
-                        </figcaption>
-                    </figure>
-                    <p>
-                        At the semantics level, a citation is a <code>schema:ScholarlyArticle</code> (or subtype)
-                        with an <code>id</code> to reference it internally in the document and a
-                        <code>resource</code> that is a URL identifying it (its DOI for instance, preferable in
-                        HTTP-retrievable form).
-                    </p>
-                    <p>
-                        That <code>schema:ScholarlyArticle</code> has any number of <code>schema:author</code>
-                        which are <code>schema:Person</code> (with the usual <code>schema:givenName</code>,
-                        <code>schema:familyName</code>, etc.). A child <code>cite</code> element, with
-                        <code>property="schema:name"</code> (and optionally a link child) provides the title
-                        of the article.
-                    </p>
-                    <p>
-                        The publisher is described using a nested <code>schema:isPartOf</code> structure of
-                        <code>schema:PublicationIssue</code>, <code>schema:PublicationVolume</code>,
-                        and <code>schema:Periodical</code> (with only those that are known being used). Both
-                        <code>schema:volumeNumber</code> and <code>schema:issueNumber</code> may be used on the
-                        volume and issue.
-                    </p>
-                    <p>
-                        A <code>time</code> element with <code>property="schema:datePublished"</code> provides
-                        the publication date, which is expressed in text in human-readable form and in the
-                        <code>datetime</code> attribute in standard form. A <code>datatype</code> attribute
-                        matching the date format must be provided.
-                    </p>
-                    <p>
-                        Both <code>schema:pageStart</code> and <code>schema:pageEnd</code> may be provided.
-                    </p>
-                    <p>
-                        Beyond the semantics, a more specific serialisation known a «Flexcite» is in the works
-                        and will be added here soon. Its properties are simple: when unstyled it reads linearly
-                        in a human-friendly manner (so as to be accessible), and it can be styled with CSS to be
-                        turned into arbitrary citation style preferences.
-                    </p>
-                </section>
-                <section id="authors">
-                    <h3>The Authors &amp; Affiliations Section</h3>
-                    <p>
-                        Capturing authors, the affiliations and their relationship to the article is the most
-                        intricate part of Scholarly HTML. Care was taken to avoid repetition and to keep the
-                        markup density as reasonable as possible, but the data to content ratio remains
-                        relatively high.
-                    </p>
-                    <p>
-                        It is probably best to start from an example and then to explain it:
-                    </p>
+                <figcaption>
+                    A citation (not yet in Flexcite format).
+                </figcaption>
+            </figure>
+            <p>
+                At the semantics level, a citation is a <code>schema:ScholarlyArticle</code> (or subtype)
+                with an <code>id</code> to reference it internally in the document and a
+                <code>resource</code> that is a URL identifying it (its DOI for instance, preferable in
+                HTTP-retrievable form).
+            </p>
+            <p>
+                That <code>schema:ScholarlyArticle</code> has any number of <code>schema:author</code>
+                which are <code>schema:Person</code> (with the usual <code>schema:givenName</code>,
+                <code>schema:familyName</code>, etc.). A child <code>cite</code> element, with
+                <code>property="schema:name"</code> (and optionally a link child) provides the title
+                of the article.
+            </p>
+            <p>
+                The publisher is described using a nested <code>schema:isPartOf</code> structure of
+                <code>schema:PublicationIssue</code>, <code>schema:PublicationVolume</code>,
+                and <code>schema:Periodical</code> (with only those that are known being used). Both
+                <code>schema:volumeNumber</code> and <code>schema:issueNumber</code> may be used on the
+                volume and issue.
+            </p>
+            <p>
+                A <code>time</code> element with <code>property="schema:datePublished"</code> provides
+                the publication date, which is expressed in text in human-readable form and in the
+                <code>datetime</code> attribute in standard form. A <code>datatype</code> attribute
+                matching the date format must be provided.
+            </p>
+            <p>
+                Both <code>schema:pageStart</code> and <code>schema:pageEnd</code> may be provided.
+            </p>
+            <p>
+                Beyond the semantics, a more specific serialisation known a «Flexcite» is in the works
+                and will be added here soon. Its properties are simple: when unstyled it reads linearly
+                in a human-friendly manner (so as to be accessible), and it can be styled with CSS to be
+                turned into arbitrary citation style preferences.
+            </p>
+        </section>
+        <section id="authors">
+            <h3>The Authors &amp; Affiliations Section</h3>
+            <p>
+                Capturing authors, the affiliations and their relationship to the article is the most
+                intricate part of Scholarly HTML. Care was taken to avoid repetition and to keep the
+                markup density as reasonable as possible, but the data to content ratio remains
+                relatively high.
+            </p>
+            <p>
+                It is probably best to start from an example and then to explain it:
+            </p>
 
-                    <figure typeof="schema:SoftwareSourceCode">
-                        <meta property="schema:name" content="html">
-                        <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
+            <figure typeof="schema:SoftwareSourceCode">
+                <meta property="schema:name" content="html">
+                <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
 &lt;!-- The author and contributor list --&gt;
 &lt;article resource="#"&gt;
   …
@@ -910,101 +925,101 @@
   …
 &lt;/article&gt;
             </code></pre>
-                        <figcaption>
-                            The authors and affiliations section for this document.
-                        </figcaption>
-                    </figure>
-                    <p>
-                        The markup is relatively convoluted, but the data model is rich:
-                    </p>
-                    <figure typeof="sa:Image">
-                        <!-- <img src="" width="976" height="452"> -->
-                        <figcaption>
-                            The data model that matches the code
-                        </figcaption>
-                    </figure>
-                    <p>
-                        This <code>section</code> has no <code>typeof</code> and
-                        no heading element. It contains a first <code>ol</code>
-                        which lists authors, and optionally a
-                        second <code>ol</code> to list affiliations.
-                    </p>
-                    <p>
-                        Each <code>li</code> in the authors <code>ol</code> has
-                        <code>property="schema:author"</code> or <code>property="schema:contributor"</code> and a
-                        <code>typeof="sa:ContributorRole"</code>.
-                    </p>
-                    <p>
-                        A <code>sa:ContributorRole</code> type (following the
-                        semantic of
-                        schema.org <a href="http://schema.org/Role">Role</a>) is
-                        used so that affiliations or contact informations (email
-                        address, etc.) relevant to this specific scholarly article
-                        (and this specific scholarly article only) can be
-                        specified. This is important as authors may have different
-                        affiliations and contact points at the time they are
-                        publishing a scholarly article but may want to specify
-                        only a subset of those. Readers not familiar with the
-                        semantic of schema.org Role can consult
-                        the <a href="http://blog.schema.org/2014/06/introducing-role.html">introductory
-                        blog post</a>.
-                    </p>
-                    <p>
-                        Inside of that <code>li</code>, arbitrary properties
-                        of <code>schema:Person</code>, filling
-                        the <code>schema:author</code> property of
-                        the <code>sa:ContributorRole</code> can be specified, but
-                        providing at least <code>schema:givenName</code> and
-                        <code>schema:familyName</code>. It is recommended that
-                        these properties are wrapped into an hyperlink
-                        identifying the person with a URL to their home page,
-                        their <a href="http://orcid.org/">ORCID</a>, or an email
-                        address.
-                    </p>
-                    <p>
-                        If there is an affiliations <code>ol</code> and a given
-                        author is affiliated, there must be an <code>a</code>
-                        element with its <code>href</code> pointing to that
-                        affiliation, a <code>resource</code> matching the URL
-                        identifying the affiliation,
-                        and <code>property="schema:roleAffiliation"</code>. The
-                        content of that <code>a</code> element must be a string
-                        that matches the one that will be generated by CSS to
-                        label the affiliation; Latin lowercase being
-                        recommended. (This is a hack, but we can only do so much
-                        within the limits of CSS — better <code>counter</code>
-                        would be needed.)
-                    </p>
-                    <p>
-                        If an author (or contributor) is a corresponding author, a
-                        last <code>sup</code> element needs to be added to
-                        its <code>li</code>
-                        with <code>property="sa:roleContactPoint"</code>, <code>typeof="schema:ContactPoint"</code>
-                        (or subclass). Inside the <code>sup</code> element, there
-                        must be at least a link to the contributor email address
-                        (<code>mailto:</code>). More contact information such as
-                        properties of <code>schema:PostalAddress</code> may be
-                        added using <code>meta</code> tags.
-                    </p>
-                    <p>
-                        If there is an affiliations <code>ol</code>, each <code>li</code> in it must have an
-                        <code>id</code> which the authors link to. In turn it contains an <code>a</code>
-                        element linking to the affiliation with <code>typeof</code> set to either
-                        <code>schema:Organization</code> or <a href="http://schema.org/Organization">one of its
-                        subtypes</a>. Inside the <code>a</code> needs to sit a <code>span</code> (or any
-                        acceptable element, really) with <code>property="schema:name"</code>, containing the
-                        name.
-                    </p>
-                </section>
-                <section id="funding">
-                    <h3>The Funding Section</h3>
-                    <p>
-                        The funding information attached to an article involves a list of sponsors each of which
-                        offers a list of funding sources. Again, an example probably makes the idea clearer:
-                    </p>
-                    <figure typeof="schema:SoftwareSourceCode">
-                        <meta property="schema:name" content="html">
-                        <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
+                <figcaption>
+                    The authors and affiliations section for this document.
+                </figcaption>
+            </figure>
+            <p>
+                The markup is relatively convoluted, but the data model is rich:
+            </p>
+            <figure typeof="sa:Image">
+                <!-- <img src="" width="976" height="452"> -->
+                <figcaption>
+                    The data model that matches the code
+                </figcaption>
+            </figure>
+            <p>
+                This <code>section</code> has no <code>typeof</code> and
+                no heading element. It contains a first <code>ol</code>
+                which lists authors, and optionally a
+                second <code>ol</code> to list affiliations.
+            </p>
+            <p>
+                Each <code>li</code> in the authors <code>ol</code> has
+                <code>property="schema:author"</code> or <code>property="schema:contributor"</code> and a
+                <code>typeof="sa:ContributorRole"</code>.
+            </p>
+            <p>
+                A <code>sa:ContributorRole</code> type (following the
+                semantic of
+                schema.org <a href="http://schema.org/Role">Role</a>) is
+                used so that affiliations or contact informations (email
+                address, etc.) relevant to this specific scholarly article
+                (and this specific scholarly article only) can be
+                specified. This is important as authors may have different
+                affiliations and contact points at the time they are
+                publishing a scholarly article but may want to specify
+                only a subset of those. Readers not familiar with the
+                semantic of schema.org Role can consult
+                the <a href="http://blog.schema.org/2014/06/introducing-role.html">introductory
+                blog post</a>.
+            </p>
+            <p>
+                Inside of that <code>li</code>, arbitrary properties
+                of <code>schema:Person</code>, filling
+                the <code>schema:author</code> property of
+                the <code>sa:ContributorRole</code> can be specified, but
+                providing at least <code>schema:givenName</code> and
+                <code>schema:familyName</code>. It is recommended that
+                these properties are wrapped into an hyperlink
+                identifying the person with a URL to their home page,
+                their <a href="http://orcid.org/">ORCID</a>, or an email
+                address.
+            </p>
+            <p>
+                If there is an affiliations <code>ol</code> and a given
+                author is affiliated, there must be an <code>a</code>
+                element with its <code>href</code> pointing to that
+                affiliation, a <code>resource</code> matching the URL
+                identifying the affiliation,
+                and <code>property="schema:roleAffiliation"</code>. The
+                content of that <code>a</code> element must be a string
+                that matches the one that will be generated by CSS to
+                label the affiliation; Latin lowercase being
+                recommended. (This is a hack, but we can only do so much
+                within the limits of CSS — better <code>counter</code>
+                would be needed.)
+            </p>
+            <p>
+                If an author (or contributor) is a corresponding author, a
+                last <code>sup</code> element needs to be added to
+                its <code>li</code>
+                with <code>property="sa:roleContactPoint"</code>, <code>typeof="schema:ContactPoint"</code>
+                (or subclass). Inside the <code>sup</code> element, there
+                must be at least a link to the contributor email address
+                (<code>mailto:</code>). More contact information such as
+                properties of <code>schema:PostalAddress</code> may be
+                added using <code>meta</code> tags.
+            </p>
+            <p>
+                If there is an affiliations <code>ol</code>, each <code>li</code> in it must have an
+                <code>id</code> which the authors link to. In turn it contains an <code>a</code>
+                element linking to the affiliation with <code>typeof</code> set to either
+                <code>schema:Organization</code> or <a href="http://schema.org/Organization">one of its
+                subtypes</a>. Inside the <code>a</code> needs to sit a <code>span</code> (or any
+                acceptable element, really) with <code>property="schema:name"</code>, containing the
+                name.
+            </p>
+        </section>
+        <section id="funding">
+            <h3>The Funding Section</h3>
+            <p>
+                The funding information attached to an article involves a list of sponsors each of which
+                offers a list of funding sources. Again, an example probably makes the idea clearer:
+            </p>
+            <figure typeof="schema:SoftwareSourceCode">
+                <meta property="schema:name" content="html">
+                <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
 &lt;article resource="#"&gt;
   &lt;!-- This work was sponsored by the Child Detection Agency (CDA) under the grant grantId --&gt;
   &lt;section typeof="sa:Funding"&gt;
@@ -1032,64 +1047,64 @@
   &lt;/section&gt;
 &lt;/article&gt;
             </code></pre>
-                        <figcaption>
-                            The markup for a complete funding section.
-                        </figcaption>
-                    </figure>
-                    <p>
-                        The section has <code>typeof="sa:Funding"</code> and an arbitrary heading title, like
-                        other sections.
-                    </p>
-                    <p>
-                        It contains a series of <a href="#hunk-elements">hunks</a> that are
-                        <code>rel="schema:sponsor"</code> (there can also be other content, it is ignored for
-                        our purposes). The example above uses a <code>p</code> and a narrative style for its
-                        content, but you have freedom to use other encodings.
-                    </p>
-                    <p>
-                        As for contributor affiliations, source of fundings are
-                        expressed using a subclass of <code>schema:Role</code> (<code>sa:SponsorRole</code>).
-                        The usage of schema.org <code>Role</code> type is needed
-                        to describe the source of fundings specific to a scholarly
-                        article as opposed to all the source of funding of an
-                        organization (relevant or not to our scholarly article of
-                        interest).
-                    </p>
-                    <p>
-                        The funder will be <code>typeof="schema:Organization"</code> (or a subtype thereof), as the
-                        object of a
-                        <code>schema:sponsor</code> property on the <code>sa:SponsorRole</code>. It
-                        will be identified through its URL (as in the <code>a</code> above), and will typically
-                        have <code>schema:name</code> and often <code>schema:alternateName</code>.
-                    </p>
-                    <p>
-                        The specific source of funding is of type <code>sa:FundingSource</code>, as the object of a
-                        <code>sa:roleOffer</code> property on the <code>sa:SponsorRole</code>. It
-                        should have a URL identifying it and a <code>schema:serialNumber</code> that is its
-                        labeled identity.
-                    </p>
-                </section>
-                <section id="data-rich">
-                    <h3>Data rich scholarly articles</h3>
-                    <p>
-                        Scholarly Articles are often part of a larger network of
-                        creative works containing dataset, code, additional
-                        figures, tables or media (audio, video). Even within a
-                        scholarly article, some creative works can be encoded in
-                        different ways (for instance, figures typically comes in
-                        different resolutions). Scholarly HTML aims to formally
-                        describe (and help archive) this larger context.
-                    </p>
-                    <p>
-                        Further data about a scholarly graph can be exposed within
-                        the article in RDFa or as
-                        <a href="http://json-ld.org">JSON-LD</a> islands. When
-                        JSON-LD is used, it is recommended not to duplicate the
-                        data already serialized in RDFa. JSON-LD should be
-                        reserved to expose data not directly present in the HTML
-                        markup.
-                    </p>
-                    <figure>
+                <figcaption>
+                    The markup for a complete funding section.
+                </figcaption>
+            </figure>
+            <p>
+                The section has <code>typeof="sa:Funding"</code> and an arbitrary heading title, like
+                other sections.
+            </p>
+            <p>
+                It contains a series of <a href="#hunk-elements">hunks</a> that are
+                <code>rel="schema:sponsor"</code> (there can also be other content, it is ignored for
+                our purposes). The example above uses a <code>p</code> and a narrative style for its
+                content, but you have freedom to use other encodings.
+            </p>
+            <p>
+                As for contributor affiliations, source of fundings are
+                expressed using a subclass of <code>schema:Role</code> (<code>sa:SponsorRole</code>).
+                The usage of schema.org <code>Role</code> type is needed
+                to describe the source of fundings specific to a scholarly
+                article as opposed to all the source of funding of an
+                organization (relevant or not to our scholarly article of
+                interest).
+            </p>
+            <p>
+                The funder will be <code>typeof="schema:Organization"</code> (or a subtype thereof), as the
+                object of a
+                <code>schema:sponsor</code> property on the <code>sa:SponsorRole</code>. It
+                will be identified through its URL (as in the <code>a</code> above), and will typically
+                have <code>schema:name</code> and often <code>schema:alternateName</code>.
+            </p>
+            <p>
+                The specific source of funding is of type <code>sa:FundingSource</code>, as the object of a
+                <code>sa:roleOffer</code> property on the <code>sa:SponsorRole</code>. It
+                should have a URL identifying it and a <code>schema:serialNumber</code> that is its
+                labeled identity.
+            </p>
+        </section>
+        <section id="data-rich">
+            <h3>Data rich scholarly articles</h3>
+            <p>
+                Scholarly Articles are often part of a larger network of
+                creative works containing dataset, code, additional
+                figures, tables or media (audio, video). Even within a
+                scholarly article, some creative works can be encoded in
+                different ways (for instance, figures typically comes in
+                different resolutions). Scholarly HTML aims to formally
+                describe (and help archive) this larger context.
+            </p>
+            <p>
+                Further data about a scholarly graph can be exposed within
+                the article in RDFa or as
+                <a href="http://json-ld.org">JSON-LD</a> islands. When
+                JSON-LD is used, it is recommended not to duplicate the
+                data already serialized in RDFa. JSON-LD should be
+                reserved to expose data not directly present in the HTML
+                markup.
+            </p>
+            <figure>
             <pre><code class="language-jsonld">
 {
   "@context": "http://schema.org",
@@ -1131,104 +1146,104 @@
   ]
 }
             </code></pre>
-                        <figcaption>
-                            <p>
-                                A scholarly graph, detailing the context of a
-                                scholarly article in JSON-LD. Here, the scholarly
-                                article contains a figure available in 2 sizes and is
-                                based on software source code available in a code
-                                repository. The <code>schemaIsBasedOnUrl</code>
-                                property also indicates that the small image was
-                                derived from the large one.
-                            </p>
-                            <aside typeof="schema:WPSideBar">
-                                To maintain good compatibility with schema.org, each
-                                creative work is marked as being part of the named
-                                graph with <code>schema:isPartOf</code>.
-                            </aside>
-                        </figcaption>
-                    </figure>
+                <figcaption>
                     <p>
-                        A scholarly graph provides a manifest for a scholarly
-                        article listing all the creative works, their encodings
-                        and the relationship between these objects (expressed
-                        with <code>schema:hasPart</code>
-                        and <code>schema:isBasedOnUrl</code>).
+                        A scholarly graph, detailing the context of a
+                        scholarly article in JSON-LD. Here, the scholarly
+                        article contains a figure available in 2 sizes and is
+                        based on software source code available in a code
+                        repository. The <code>schemaIsBasedOnUrl</code>
+                        property also indicates that the small image was
+                        derived from the large one.
                     </p>
+                    <aside typeof="schema:WPSideBar">
+                        To maintain good compatibility with schema.org, each
+                        creative work is marked as being part of the named
+                        graph with <code>schema:isPartOf</code>.
+                    </aside>
+                </figcaption>
+            </figure>
+            <p>
+                A scholarly graph provides a manifest for a scholarly
+                article listing all the creative works, their encodings
+                and the relationship between these objects (expressed
+                with <code>schema:hasPart</code>
+                and <code>schema:isBasedOnUrl</code>).
+            </p>
 
-                    <figure typeof="schema:Table">
-                        <table>
-                            <caption>
-                                Subclass of <code>schema:CreativeWork</code> commonly
-                                associated with a Scholarly Article.
-                            </caption>
-                            <thead>
-                            <tr>
-                                <td>Creative Work</td>
-                                <td>Property</td>
-                                <td>Encoding</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td><code>schema:ScholarlyArticle</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>sa:DocumentObject</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>sa:Image</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>schema:ImageObject</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>sa:Audio</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>schema:AudioObject</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>sa:Video</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>schema:VideoObject</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>schema:Dataset</code></td>
-                                <td><code>schema:distribution</code></td>
-                                <td><code>schema:DataDownload</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>schema:Table</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>sa:TableObject</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>schema:SoftwareSourceCode</code></td>
-                                <td><code>schema:encoding</code></td>
-                                <td><code>schema:MediaObject</code></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </figure>
+            <figure typeof="schema:Table">
+                <table>
+                    <caption>
+                        Subclass of <code>schema:CreativeWork</code> commonly
+                        associated with a Scholarly Article.
+                    </caption>
+                    <thead>
+                    <tr>
+                        <td>Creative Work</td>
+                        <td>Property</td>
+                        <td>Encoding</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><code>schema:ScholarlyArticle</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>sa:DocumentObject</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>sa:Image</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>schema:ImageObject</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>sa:Audio</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>schema:AudioObject</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>sa:Video</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>schema:VideoObject</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Dataset</code></td>
+                        <td><code>schema:distribution</code></td>
+                        <td><code>schema:DataDownload</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:Table</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>sa:TableObject</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>schema:SoftwareSourceCode</code></td>
+                        <td><code>schema:encoding</code></td>
+                        <td><code>schema:MediaObject</code></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </figure>
 
-                </section>
-                <section id="context">
-                    <h3>Semantic context of a scholarly article</h3>
-                    <p>
-                        Scholarly Articles (and their associated resources) are
-                        frequently tagged to improve their discoverability. For
-                        instance,
-                        the <a href="https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine">National
-                        Library of Medicine</a> uses
-                        the <a href="https://en.wikipedia.org/wiki/Medical_Subject_Headings">Medical
-                        Subject Headings</a> (MeSH) controlled vocabulary to index
-                        journal articles in the life sciences. Scholarly HTML
-                        leverages schema.org and the <code>schema:about</code>
-                        property to efficiently expose this information to search
-                        engines. When possible,
-                        schema.org <a href="http://schema.org/MedicalEntity">MedicalEntity</a>
-                        (and subclasses) should be used to describe biomedical
-                        concepts.
-                    </p>
-                    <figure>
+        </section>
+        <section id="context">
+            <h3>Semantic context of a scholarly article</h3>
+            <p>
+                Scholarly Articles (and their associated resources) are
+                frequently tagged to improve their discoverability. For
+                instance,
+                the <a href="https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine">National
+                Library of Medicine</a> uses
+                the <a href="https://en.wikipedia.org/wiki/Medical_Subject_Headings">Medical
+                Subject Headings</a> (MeSH) controlled vocabulary to index
+                journal articles in the life sciences. Scholarly HTML
+                leverages schema.org and the <code>schema:about</code>
+                property to efficiently expose this information to search
+                engines. When possible,
+                schema.org <a href="http://schema.org/MedicalEntity">MedicalEntity</a>
+                (and subclasses) should be used to describe biomedical
+                concepts.
+            </p>
+            <figure>
             <pre>
                 <code class="language-jsonld">
 {
@@ -1252,28 +1267,28 @@
 }                        </code>
 
             </pre>
-                        <figcaption>
-                            Leveraging the <code>schema:about</code> property to
-                            expose concepts about a scholarly article. Note that
-                            the <code>schema:mainEntityOfPage</code> property is
-                            used to specify the part of the article where the
-                            concept is relevant.
-                        </figcaption>
-                    </figure>
-                </section>
-                <section id="hypermedia">
-                    <h3>Hypermedia controls</h3>
-                    <p>
-                        A Scholarly Article (or any resource part of a scholarly
-                        graph) can be made actionable with the addition of
-                        hypermedia controls provided
-                        through <a href="http://schema.org/Action">schema.org
-                        actions</a>. Readers not familiar with schema.org Actions
-                        should refer to
-                        the <a href="http://schema.org/docs/actions.html">actions
-                        overview document</a> for a quick introduction.
-                    </p>
-                    <figure>
+                <figcaption>
+                    Leveraging the <code>schema:about</code> property to
+                    expose concepts about a scholarly article. Note that
+                    the <code>schema:mainEntityOfPage</code> property is
+                    used to specify the part of the article where the
+                    concept is relevant.
+                </figcaption>
+            </figure>
+        </section>
+        <section id="hypermedia">
+            <h3>Hypermedia controls</h3>
+            <p>
+                A Scholarly Article (or any resource part of a scholarly
+                graph) can be made actionable with the addition of
+                hypermedia controls provided
+                through <a href="http://schema.org/Action">schema.org
+                actions</a>. Readers not familiar with schema.org Actions
+                should refer to
+                the <a href="http://schema.org/docs/actions.html">actions
+                overview document</a> for a quick introduction.
+            </p>
+            <figure>
             <pre>
                 <code class="language-jsonld">
 {
@@ -1298,124 +1313,124 @@
   }
 }
             </pre>
-                        </code>
-                        <figcaption>
-                            Hypermedia controls indicating how to submit a review
-                            about the scholarly article.
-                        </figcaption>
-                </section>
-            </section>
-            <section typeof="sa:Acknowledgements" id="acknowledgements">
-                <h2>Acknowledgements</h2>
-                <p>
-                    Scholarly HTML would like to thank <a href="http://scholarlyhtml.org/">Scholarly HTML</a>
-                    (you read that right) for blazing the trail perhaps a few years too soon. Particularly,
-                    the following people were particularly kind and helpful:
-                    <a href="https://twitter.com/ptsefton">Peter Sefton</a>,
-                    <a href="https://twitter.com/blahah404">Richard Smith-Unna</a>, and
-                    <a href="https://twitter.com/petermurrayrust">Peter Murray-Rust</a>.
-                </p>
-                <p>
-                    PLOS has a
-                    <a href="http://blogs.plos.org/mfenner/2011/03/19/a-very-brief-history-of-scholarly-html/">short
-                        history of Scholarly HTML</a> that is worth reading (and would be worth updating).
-                </p>
-                <p>
-                    Dan Brickley was kind enough to drop by the office to chat about our usage of
-                    <a href="http://schema.org">schema.org</a> even though he was tired and hungry. As always,
-                    examples involving fish tanks are the most helpful. Tzviya Siegman and Dave Cramer have
-                    shared ideas that we happily stole.
-                </p>
-                <p>
-                    Patrick Johnston's input has been crucial, notably in modelling authoring. We can only
-                    hope that getting those details exactly right have not caused him to lose too much sleep.
-                </p>
-                <p>
-                    We also received very useful feedback and pointers from: Kjetil Kjernsmo (DAHUT!), Silvio
-                    Peroni, Justin Johansson, Alf Eaton, Raniere Silvia, and Mike Smith.
-                </p>
-                <p>
-                    If we somehow forgot you in this list and you are too gracious to complain, we love you
-                    all the same.
-                </p>
-            </section>
-            <section typeof="sa:Conclusion" id="conclusion">
-                <h2>Conclusion</h2>
-                <p>
-                    Scholarly HTML is currently a work in progress and is open to change. If you have
-                    feedback, simply
-                    <a href="https://github.com/scienceai/scholarly.vernacular.io/issues">open an issue</a> on
-                    GitHub, or <a href="https://github.com/scienceai/scholarly.vernacular.io">make a pull
-                    request</a>.
-                </p>
-                <p>
-                    We believe that this vernacular establishes that it is possible to capture scholarly
-                    information accurately, while retaining a clean HTML structure that does minimum violence
-                    to the language’s spirit.
-                </p>
-                <p>
-                    The science.ai platform currently supports (most of) Scholarly HTML, but our goal is not
-                    to make this a proprietary standard — quite the opposite. We would like the scholarly
-                    publishing as much as possible to align with common practices so that we can all focus on
-                    problems more interesting than content conversion.
-                </p>
-            </section>
-            <section typeof="sa:ReferenceList" id="references">
-                <h2>References</h2>
-                <dl>
-                    <dt>NYT, 2014</dt>
-                    <dd id="ref-nyt" typeof="schema:ScholarlyArticle"
-                        resource="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">
-                        <cite property="schema:name"><a
-                                href="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">The
-                            Full New York Times Innovation Report</a></cite>,
-                        by
-                        <span property="schema:author" typeof="schema:Person">
+                </code>
+                <figcaption>
+                    Hypermedia controls indicating how to submit a review
+                    about the scholarly article.
+                </figcaption>
+        </section>
+    </section>
+    <section typeof="sa:Acknowledgements" id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        <p>
+            Scholarly HTML would like to thank <a href="http://scholarlyhtml.org/">Scholarly HTML</a>
+            (you read that right) for blazing the trail perhaps a few years too soon. Particularly,
+            the following people were particularly kind and helpful:
+            <a href="https://twitter.com/ptsefton">Peter Sefton</a>,
+            <a href="https://twitter.com/blahah404">Richard Smith-Unna</a>, and
+            <a href="https://twitter.com/petermurrayrust">Peter Murray-Rust</a>.
+        </p>
+        <p>
+            PLOS has a
+            <a href="http://blogs.plos.org/mfenner/2011/03/19/a-very-brief-history-of-scholarly-html/">short
+                history of Scholarly HTML</a> that is worth reading (and would be worth updating).
+        </p>
+        <p>
+            Dan Brickley was kind enough to drop by the office to chat about our usage of
+            <a href="http://schema.org">schema.org</a> even though he was tired and hungry. As always,
+            examples involving fish tanks are the most helpful. Tzviya Siegman and Dave Cramer have
+            shared ideas that we happily stole.
+        </p>
+        <p>
+            Patrick Johnston's input has been crucial, notably in modelling authoring. We can only
+            hope that getting those details exactly right have not caused him to lose too much sleep.
+        </p>
+        <p>
+            We also received very useful feedback and pointers from: Kjetil Kjernsmo (DAHUT!), Silvio
+            Peroni, Justin Johansson, Alf Eaton, Raniere Silvia, and Mike Smith.
+        </p>
+        <p>
+            If we somehow forgot you in this list and you are too gracious to complain, we love you
+            all the same.
+        </p>
+    </section>
+    <section typeof="sa:Conclusion" id="conclusion">
+        <h2>Conclusion</h2>
+        <p>
+            Scholarly HTML is currently a work in progress and is open to change. If you have
+            feedback, simply
+            <a href="https://github.com/scienceai/scholarly.vernacular.io/issues">open an issue</a> on
+            GitHub, or <a href="https://github.com/scienceai/scholarly.vernacular.io">make a pull
+            request</a>.
+        </p>
+        <p>
+            We believe that this vernacular establishes that it is possible to capture scholarly
+            information accurately, while retaining a clean HTML structure that does minimum violence
+            to the language’s spirit.
+        </p>
+        <p>
+            The science.ai platform currently supports (most of) Scholarly HTML, but our goal is not
+            to make this a proprietary standard — quite the opposite. We would like the scholarly
+            publishing as much as possible to align with common practices so that we can all focus on
+            problems more interesting than content conversion.
+        </p>
+    </section>
+    <section typeof="sa:ReferenceList" id="references">
+        <h2>References</h2>
+        <dl>
+            <dt>NYT, 2014</dt>
+            <dd id="ref-nyt" typeof="schema:ScholarlyArticle"
+                resource="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">
+                <cite property="schema:name"><a
+                        href="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">The
+                    Full New York Times Innovation Report</a></cite>,
+                by
+                <span property="schema:author" typeof="schema:Person">
               <span property="schema:name">New York Times</span>
             </span>;
-                        <time property="schema:datePublished" datetime="2014-03" datatype="xsd:gYearMonth">2014 Mar
-                        </time>
-                        .
-                    </dd>
-                    <dt>Science.AI, 2015a</dt>
-                    <dd id="ref-sa-ontology" typeof="schema:ScholarlyArticle"
-                        resource="https://github.com/scienceai/scholarly-article/blob/master/scholarly-article.json">
-                        <cite property="schema:name"><a
-                                href="https://github.com/scienceai/scholarly-article/blob/master/scholarly-article.json">The
-                            Scholarly Article ontology</a></cite>,
-                        by
-                        <span property="schema:author" typeof="schema:Person">
+                <time property="schema:datePublished" datetime="2014-03" datatype="xsd:gYearMonth">2014 Mar
+                </time>
+                .
+            </dd>
+            <dt>Science.AI, 2015a</dt>
+            <dd id="ref-sa-ontology" typeof="schema:ScholarlyArticle"
+                resource="https://github.com/scienceai/scholarly-article/blob/master/scholarly-article.json">
+                <cite property="schema:name"><a
+                        href="https://github.com/scienceai/scholarly-article/blob/master/scholarly-article.json">The
+                    Scholarly Article ontology</a></cite>,
+                by
+                <span property="schema:author" typeof="schema:Person">
               <span property="schema:name">Science.AI</span>
             </span>;
-                        <time property="schema:datePublished" datetime="2015-09" datatype="xsd:gYearMonth">2015 Sep
-                        </time>
-                        .
-                    </dd>
-                    <dt>Science.AI, 2015b</dt>
-                    <dd id="ref-vernacular" typeof="schema:ScholarlyArticle" resource="http://vernacular.io/">
-                        <cite property="schema:name"><a href="http://vernacular.io/">Vernacular — HTML Made Special</a></cite>,
-                        by
-                        <span property="schema:author" typeof="schema:Person">
+                <time property="schema:datePublished" datetime="2015-09" datatype="xsd:gYearMonth">2015 Sep
+                </time>
+                .
+            </dd>
+            <dt>Science.AI, 2015b</dt>
+            <dd id="ref-vernacular" typeof="schema:ScholarlyArticle" resource="http://vernacular.io/">
+                <cite property="schema:name"><a href="http://vernacular.io/">Vernacular — HTML Made Special</a></cite>,
+                by
+                <span property="schema:author" typeof="schema:Person">
               <span property="schema:name">Science.AI</span>
             </span>;
-                        <time property="schema:datePublished" datetime="2015-10" datatype="xsd:gYearMonth">2015 Oct
-                        </time>
-                        .
-                    </dd>
-                </dl>
-            </section>
-        </article>
-        <footer>
-            <p>
-                <a href="https://scira.github.io/documentation/">Documentation home</a>
-                <a href="https://twitter.com/sciencedotai">@sciencedotai</a>
-                •
-                <a href="https://github.com/scienceai/scholarly.vernacular.io">Contribute</a>
-                •
-                Brought to you by the
-                <a href="http://science.ai/"><img src="sciencedotai.svg" alt="science.ai logo" height="20px"></a>
-                League of JStice
-            </p>
-        </footer>
-    </body>
+                <time property="schema:datePublished" datetime="2015-10" datatype="xsd:gYearMonth">2015 Oct
+                </time>
+                .
+            </dd>
+        </dl>
+    </section>
+</article>
+<footer>
+    <p>
+        <a href="https://scira.github.io/documentation/">Documentation home</a>
+        <a href="https://twitter.com/sciencedotai">@sciencedotai</a>
+        •
+        <a href="https://github.com/scienceai/scholarly.vernacular.io">Contribute</a>
+        •
+        Brought to you by the
+        <a href="http://science.ai/"><img src="sciencedotai.svg" alt="science.ai logo" height="20px"></a>
+        League of JStice
+    </p>
+</footer>
+</body>
 </html>
