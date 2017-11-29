@@ -328,6 +328,8 @@
 
                         <p>In the tables below we describe each entities' properties.</p>
 
+                        <p>By using the ontology / RDF concepts, MuSeR is able to suggest smartly entities based on the relationships between instances. For example, upon creating a 'smart' playlist, the underlying mechanisms use other playlists created, stored and interlinked from the RDF storage to suggest similar songs / artists, based on the keywords provided by the user and also on the historical search data.</p>
+
                         <figure typeof="schema:Table">
                             <table>
                                 <thead>
@@ -416,6 +418,11 @@
                                     <td>the unique ID from DBPedia</td>
                                 </tr>
                                 <tr>
+                                    <td>id_spotify</td>
+                                    <td>spotify</td>
+                                    <td>the unique ID from Spotify</td>
+                                </tr>
+                                <tr>
                                     <td>about</td>
                                     <td>string</td>
                                     <td>description of the artist (band)</td>
@@ -468,8 +475,276 @@
                             </table>
                         </figure>
 
+                        <figure typeof="schema:Table">
+                            <table>
+                                <thead>
+                                <tr><code>Song</code></tr>
+                                <tr>
+                                    <th><center>Property</center></th>
+                                    <th><center>Type</center></th>
+                                    <th><center>Description</center></th>
+                                </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>id</td>
+                                    <td>UUID</td>
+                                    <td>the unique UUID of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>id_wikidata</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Wikidata</td>
+                                </tr>
+                                <tr>
+                                    <td>id_dbpedia</td>
+                                    <td>string</td>
+                                    <td>the unique ID from DBPedia</td>
+                                </tr>
+                                <tr>
+                                    <td>id_spotify</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Spotify</td>
+                                </tr>
+                                <tr>
+                                    <td>artists</td>
+                                    <td>array [Artist]</td>
+                                    <td>the list of artists</td>
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>string</td>
+                                    <td>the title of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>duration</td>
+                                    <td>int</td>
+                                    <td>the duration of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>genre</td>
+                                    <td>Genre</td>
+                                    <td>the genre of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>album</td>
+                                    <td>Album</td>
+                                    <td>the album of the song</td>
+                                </tr>
+
+                                <caption>
+                                    The list of properties of the <code>Song</code> entity along with their data types.
+                                </caption>
+                            </table>
+                        </figure>
+
+
+                        <figure typeof="schema:Table">
+                            <table>
+                                <thead>
+                                <tr><code>Album</code></tr>
+                                <tr>
+                                    <th><center>Property</center></th>
+                                    <th><center>Type</center></th>
+                                    <th><center>Description</center></th>
+                                </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>id</td>
+                                    <td>UUID</td>
+                                    <td>the unique UUID of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>id_wikidata</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Wikidata</td>
+                                </tr>
+                                <tr>
+                                    <td>id_dbpedia</td>
+                                    <td>string</td>
+                                    <td>the unique ID from DBPedia</td>
+                                </tr>
+                                <tr>
+                                    <td>id_spotify</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Spotify</td>
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>string</td>
+                                    <td>the title of the album</td>
+                                </tr>
+                                <tr>
+                                    <td>artists</td>
+                                    <td>array [Artist]</td>
+                                    <td>the list of artists</td>
+                                </tr>
+                                <tr>
+                                    <td>year</td>
+                                    <td>date</td>
+                                    <td>the year of album release</td>
+                                </tr>
+                                <tr>
+                                    <td>songs</td>
+                                    <td>array [Song]</td>
+                                    <td>the list of songs</td>
+                                </tr>
+                                <tr>
+                                    <td>duration</td>
+                                    <td>int</td>
+                                    <td>the duration of the album</td>
+                                </tr>
+                                <tr>
+                                    <td>genres</td>
+                                    <td>array [Genre]</td>
+                                    <td>the genres of the album</td>
+                                </tr>
+                                <caption>
+                                    The list of properties of the <code>Album</code> entity along with their data types.
+                                </caption>
+                            </table>
+                        </figure>
+
+                        <figure typeof="schema:Table">
+                            <table>
+                                <thead>
+                                <tr><code>Genre</code></tr>
+                                <tr>
+                                    <th><center>Property</center></th>
+                                    <th><center>Type</center></th>
+                                    <th><center>Description</center></th>
+                                </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>id</td>
+                                    <td>UUID</td>
+                                    <td>the unique UUID of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>id_wikidata</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Wikidata</td>
+                                </tr>
+                                <tr>
+                                    <td>id_dbpedia</td>
+                                    <td>string</td>
+                                    <td>the unique ID from DBPedia</td>
+                                </tr>
+                                <tr>
+                                    <td>id_spotify</td>
+                                    <td>string</td>
+                                    <td>the unique ID from Spotify</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>the name of the Genre</td>
+                                </tr>
+                                <tr>
+                                    <td>related</td>
+                                    <td>array [Genre]</td>
+                                    <td>the list of genres related</td>
+                                </tr>
+                                <caption>
+                                    The list of properties of the <code>Genre</code> entity along with their data types.
+                                </caption>
+                            </table>
+                        </figure>
+
+                        <figure typeof="schema:Table">
+                            <table>
+                                <thead>
+                                <tr><code>Event</code></tr>
+                                <tr>
+                                    <th><center>Property</center></th>
+                                    <th><center>Type</center></th>
+                                    <th><center>Description</center></th>
+                                </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>id</td>
+                                    <td>UUID</td>
+                                    <td>the unique UUID of the song</td>
+                                </tr>
+                                <tr>
+                                    <td>title</td>
+                                    <td>string</td>
+                                    <td>the title of the event</td>
+                                </tr>
+                                <tr>
+                                    <td>start_date</td>
+                                    <td>date</td>
+                                    <td>the start date of the event</td>
+                                </tr>
+                                <tr>
+                                    <td>end_date</td>
+                                    <td>date</td>
+                                    <td>the end date of the event</td>
+                                </tr>
+                                <tr>
+                                    <td>country</td>
+                                    <td>string</td>
+                                    <td>the country where the event is held</td>
+                                </tr>
+                                <tr>
+                                    <td>city</td>
+                                    <td>string</td>
+                                    <td>the city where the event is held</td>
+                                </tr>
+                                <tr>
+                                    <td>place</td>
+                                    <td>string</td>
+                                    <td>the place where the event is held</td>
+                                </tr>
+                                <tr>
+                                    <td>about</td>
+                                    <td>string</td>
+                                    <td>description of the event</td>
+                                </tr>
+                                <tr>
+                                    <td>artists</td>
+                                    <td>array [Artist]</td>
+                                    <td>the list of artists that attend the event</td>
+                                </tr>
+                                <caption>
+                                    The list of properties of the <code>Event</code> entity along with their data types.
+                                </caption>
+                            </table>
+                        </figure>
+
                     </section><!-- data-modelling -->
                 </section>
+
+                <section typeof="" id="use-cases">
+                    <h2>Use-Cases</h2>
+
+                    <!-- Diagrama use case:
+    	- toate actiunile pricipale din diagrma creare playlist, cautare artist, import playlist, viewplaylist necesita auth
+    	- din acestea se pot extinde actiuni cum ar fi:
+    			- vizualizare coloborarilor unui artist
+    			- selectarea melodiei unui artist cu posibilitatea de a o adauga in playlist
+    	 		- eliminarea unei melodii din playlist
+    	 		- exportarea unui playlist
+    	 		- vizualizarea sub forma unui graf
+     -->
+
+                    <figure typeof="sa:Image">
+                        <img src="public/resources/use_case.png">
+                        <figcaption>
+                            Use-Case diagram
+                        </figcaption>
+                    </figure>
+                    <p>
+                        
+                    </p>
+                </section>
+
+
+
+                <p>Aside from the data model described above, there will also be a <code>Users</code> and <cody>History</code> table that will store information about the registered persons and the historical data for each one of them.</p>
 
                 <section id="file-headers">
                     <h3>File &amp; Supporting Structure</h3>
@@ -695,6 +970,7 @@
                     <figure typeof="schema:SoftwareSourceCode">
                         <meta property="schema:name" content="html">
                         <pre property="schema:programmingLanguage" typeof="schema:Language"><code class="language-html">
+
 &lt;figure typeof="schema:SoftwareSourceCode">
   &lt;pre property="schema:programmingLanguage" typeof="schema:Language">
     &lt;meta property="schema:name" content="python">
